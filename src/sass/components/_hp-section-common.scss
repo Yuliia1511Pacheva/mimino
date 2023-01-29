@@ -190,6 +190,10 @@
           margin-bottom: 32px;
           gap: 26px;
           align-items: center;
+
+          &--wrapper{
+            width: 439px;
+          }
         }
     
         &__second-row {
@@ -230,10 +234,12 @@
         }
     
         &__paragraph {
+          min-width: 439px;
           font-size: 16px;
           margin-bottom: 0;
 
           &--golden {
+            min-width: 312px;
             font-size: 16px;
           }
         }
