@@ -69,16 +69,25 @@ letter-spacing: 0.02em;
 }
 
 .rm-section-comfort__button {
+  padding: 0px;
   margin-bottom: 20px;
 }
 
 .rm-section-comfort__link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 32px;
+  color: $TextColorBrown;
+  font-weight: 500;
+font-size: 16px;
+line-height: calk(20 / 16);
+letter-spacing: 0.02em;
 }
 
 
 .rm-section-comfort__buttons{
+    text-align: center;
     @media screen and (min-width: 1024px){
         position: absolute;
         right: 47px;
@@ -89,4 +98,8 @@ letter-spacing: 0.02em;
         bottom: 48px;
     }
 
+}
+
+.rm-section-comfort__icon{
+  margin-left: 20px;
 }
