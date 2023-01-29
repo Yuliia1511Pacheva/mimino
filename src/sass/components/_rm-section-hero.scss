@@ -79,3 +79,11 @@
   }
 }
 
+.rm-section-hero__socials{
+  display: flex;
+  flex-direction: column;
+
+}
+.rm-section-hero__icon:not(:last-child){
+  margin-bottom: 8px;
+}
