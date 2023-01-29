@@ -4,11 +4,11 @@
   @media screen and (min-width: 1024px) {
     display: flex;
     flex-wrap: wrap;
-    padding: 62px 32px 40px;
+    padding: 62px 0 40px;
   }
 
   @media screen and (min-width: 1280px) {
-    padding: 72px 70px 40px;
+    padding: 72px 0 40px;
   }
   &--flex {
     @media screen and (min-width: 1024px) {
@@ -21,10 +21,12 @@
     max-width: 338px;
 
     @media screen and (min-width: 1024px) {
+      margin-right: 26px;
       max-width: 423px;
     }
 
     @media screen and (min-width: 1280px) {
+      margin-right: 48px;
       max-width: 507px;
     }
     &--up {
@@ -40,7 +42,7 @@
       }
     }
     &--down {
-      max-width: 258px;
+      width: 258px;
       margin-bottom: 32px;
       font-family: 'Montserrat';
       font-weight: 600;
@@ -49,13 +51,11 @@
       letter-spacing: 0.02em;
       color: $TextColorGrey;
       @media screen and (min-width: 1024px) {
-        max-width: 439px;
-        margin-right: 26px;
+        width: 439px;
         font-size: 16px;
       }
       @media screen and (min-width: 1280px) {
-        max-width: 400px;
-        margin-right: 155px;
+        width: 400px;
       }
     }
   }
@@ -69,7 +69,11 @@
     color: $TextColorBrownLight;
 
     @media screen and (min-width: 1024px) {
+      margin-bottom: 62px;
       font-size: 64px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 72px;
     }
   }
   &__subtitle {
@@ -81,12 +85,15 @@
     letter-spacing: 0.05em;
     color: $TextColorBlack;
     &--uppercase {
+      display: inline;
       text-transform: uppercase;
     }
     @media screen and (min-width: 1024px) {
+      margin-bottom: 16px;
       font-size: 30px;
     }
     @media screen and (min-width: 1280px) {
+      margin-bottom: 24px;
       font-size: 36px;
     }
   }
@@ -112,6 +119,9 @@
     max-width: 236px;
     @media screen and (min-width: 1024px) {
       margin: 0 0 0 auto;
+    }
+    & .button:not(:last-child) {
+      margin-bottom: 16px;
     }
   }
 }
