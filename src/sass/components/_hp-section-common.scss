@@ -162,5 +162,15 @@
 }
 
 /*Tablet  - from 1024px*/
+@media screen and (min-width: 414px) {
+    .container {
+        width: $tablet;
+      }
+}
 
 /*Desktop  - from 1280px*/
+@media screen and (min-width: 414px) {
+    .container {
+        width: $desktop;
+      }
+}
