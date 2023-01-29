@@ -1,10 +1,7 @@
 /*Mobile style - up to 414px*/
 
 @media screen and (max-width: 413px) {
-  .container {
-    max-width: 413px;
-  }
-
+  
   .hp-section-common {
     padding: 16px 15px 20px 15px;
 
@@ -26,9 +23,6 @@
       align-items: center;
       gap: 20px;
 
-      &-text-wrapper {
-        
-      }
     }
 
     &__title-h2 {
@@ -86,9 +80,7 @@
 }
 
 @media screen and (min-width: 414px) {
-  .container {
-    width: $mobile;
-  }
+  
   .hp-section-common {
     padding: 16px 15px 20px 15px;
 
@@ -171,9 +163,7 @@
 
 /*Tablet  - from 1024px*/
 @media screen and (min-width: $tablet) {
-  .container {
-    width: $tablet;
-  }
+  
 
   .hp-section-common {
     padding: 120px 47px 32px 47px;
@@ -249,9 +239,7 @@
 
 /*Desktop  - from 1280px*/
 @media screen and (min-width: 1280px) {
-  .container {
-    width: $desktop;
-  }
+  
 
   .hp-section-common {
     padding: 120px 85px 50px 85px;
