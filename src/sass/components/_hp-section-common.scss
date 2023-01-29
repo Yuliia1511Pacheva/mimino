@@ -15,7 +15,7 @@
     &__first-row {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      flex-direction: column;
       margin-bottom: 32px;
     }
 
@@ -26,7 +26,7 @@
       gap: 20px;
 
       &-text-wrapper {
-        max-width: 258px;
+        
       }
     }
 
@@ -49,7 +49,7 @@
     }
 
     &__image-1 {
-      max-width: 244px;
+      width: 244px;
       display: block;
       box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
       border-radius: 2px;
@@ -58,8 +58,7 @@
 
     &__image-2 {
       display: block;
-      max-width: 244px;
-      max-width: 200px;
+      width: 200px;
       box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
       border-radius: 2px;
     }
@@ -94,10 +93,12 @@
 
     &__wrapper {
       display: flex;
+     
     }
 
     &__first-row {
       display: flex;
+      flex-direction: column;
       flex-wrap: wrap;
       justify-content: space-between;
       margin-bottom: 32px;
@@ -134,7 +135,7 @@
 
     &__image-1 {
       display: block;
-      min-width: 244;
+      max-width: 244;
       box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
       border-radius: 2px;
       margin-left: auto;
@@ -182,11 +183,13 @@
     &__wrapper {
       display: flex;
       flex-direction: column;
+    
     }
 
     &__first-row {
       display: flex;
-      justify-content: left;
+      flex-direction: row;
+      justify-content: center;
       margin-bottom: -16px;
       gap: 26px;
       align-items: center;
@@ -198,7 +201,7 @@
 
     &__second-row {
       display: flex;
-      justify-content: left;
+      justify-content: center;
       align-items: center;
       gap: 20px;
 
@@ -254,6 +257,7 @@
 
   .hp-section-common {
     padding: 120px 85px 50px 85px;
+   
 
     &__wrapper {
       display: flex;
@@ -262,7 +266,7 @@
 
     &__first-row {
       display: flex;
-      justify-content: left;
+      justify-content: center;
       margin-bottom: -16px;
       gap: 26px;
       align-items: center;
@@ -274,7 +278,7 @@
 
     &__second-row {
       display: flex;
-      justify-content: left;
+      justify-content: center;
       align-items: center;
       gap: 20px;
 
