@@ -1,0 +1,71 @@
+<section class="hotel-double">
+  <div class="hotel-double--flex container">
+    <div>
+      <p class="hotel-double__text hotel-double__text--up">
+        Amet minim mollit non
+      </p>
+      <h2 class="hotel-double__title">MIMIHO</h2>
+      <p class="hotel-double__subtitle">
+        <span class="hotel-double__subtitle hotel-double__subtitle--uppercase"
+          >ДВОМІСНИЙ НОМЕР</span
+        >
+        люкс
+      </p>
+      <p class="hotel-double__text hotel-double__text--down">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+    </div>
+    <picture>
+      <source
+        srcset="
+          ./images/hotel_lux_mob.webp    1x,
+          ./images/hotel_lux_mob@2x.webp 2x
+        "
+        type="image/webp"
+        media="(max-width: 1023px)"
+      />
+      <source
+        srcset="./images/hotel_lux_mob.jpg 1x, ./images/hotel_lux_mob@2x.jpg 2x"
+        media="(max-width: 1023px)"
+      />
+
+      <source
+        srcset="
+          ./images/hotel_lux_desk.webp    1x,
+          ./images/hotel_lux_desk@2x.webp 2x
+        "
+        type="image/webp"
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="
+          ./images/hotel_lux_desk.jpg    1x,
+          ./images/hotel_lux_desk@2x.jpg 2x
+        "
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="
+          ./images/hotel_lux_tab.webp    1x,
+          ./images/hotel_lux_tab@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <img
+        class="hotel-double__images"
+        srcset="./images/hotel_lux_tab.jpg 1x, ./images/hotel_lux_tab@2x.jpg 2x"
+        alt="Hotel lux"
+      />
+    </picture>
+    <div class="hotel-double__button">
+      <button class="button button--black" type="button">
+        <a href="./rooms.html">Детальніше</a>
+      </button>
+      <button class="button button--black" type="button">
+        Переглянути ціни
+      </button>
+    </div>
+  </div>
+</section>
