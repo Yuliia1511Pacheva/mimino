@@ -21,12 +21,10 @@
     max-width: 338px;
 
     @media screen and (min-width: 1024px) {
-      margin-right: 26px;
       max-width: 423px;
     }
 
     @media screen and (min-width: 1280px) {
-      margin-right: 48px;
       max-width: 507px;
     }
     &--up {
@@ -52,10 +50,12 @@
       color: $TextColorGrey;
       @media screen and (min-width: 1024px) {
         max-width: 439px;
+        margin-right: 26px;
         font-size: 16px;
       }
       @media screen and (min-width: 1280px) {
         max-width: 400px;
+        margin-right: 155px;
       }
     }
   }
