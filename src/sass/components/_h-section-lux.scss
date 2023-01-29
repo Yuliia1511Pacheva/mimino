@@ -1,5 +1,6 @@
 .hotel-lux {
   padding: 32px 15px;
+
   @media screen and (min-width: 1024px) {
     display: flex;
     flex-wrap: wrap;
@@ -8,6 +9,10 @@
 
   @media screen and (min-width: 1280px) {
     padding: 72px 85px 40px;
+  }
+  &--flex {
+    display: flex;
+    flex-wrap: wrap;
   }
   &__text--up {
     margin-bottom: 8px;
@@ -90,14 +95,6 @@
     margin: 0 auto;
     display: block;
     max-width: 236px;
-    &--test {
-      width: 236px;
-      height: 48px;
-      cursor: pointer;
-      &:not(:last-child) {
-        margin-bottom: 16px;
-      }
-    }
     @media screen and (min-width: 1024px) {
       margin: 0 0 0 auto;
     }
