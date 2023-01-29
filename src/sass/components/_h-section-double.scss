@@ -2,8 +2,6 @@
   padding: 32px 0;
 
   @media screen and (min-width: 1024px) {
-    display: flex;
-    flex-wrap: wrap;
     padding: 62px 0 40px;
   }
 
@@ -14,6 +12,7 @@
     @media screen and (min-width: 1024px) {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
     }
   }
   &__text {
@@ -21,11 +20,11 @@
     max-width: 338px;
 
     @media screen and (min-width: 1024px) {
-      max-width: 423px;
+      max-width: 438px;
     }
 
     @media screen and (min-width: 1280px) {
-      max-width: 507px;
+      max-width: 525px;
     }
     &--up {
       margin-bottom: 8px;
@@ -50,12 +49,10 @@
       color: $TextColorGrey;
       @media screen and (min-width: 1024px) {
         max-width: 439px;
-        margin-right: 26px;
         font-size: 16px;
       }
       @media screen and (min-width: 1280px) {
         max-width: 400px;
-        margin-right: 155px;
       }
     }
   }
@@ -85,7 +82,6 @@
     letter-spacing: 0.05em;
     color: $TextColorBlack;
     &--uppercase {
-      display: inline;
       text-transform: uppercase;
     }
     @media screen and (min-width: 1024px) {
