@@ -179,10 +179,10 @@
     padding: 120px 47px 32px 47px;
 
     &__wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+      }
 
     &__first-row {
       display: flex;
@@ -198,15 +198,15 @@
     }
 
     &__second-row {
-      display: flex;
-      justify-content: center;
-     
-      gap: 20px;
-
-      &-text-wrapper {
-        width: 312px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        gap: 20px;
+  
+        &-text-wrapper {
+          width: 312px;
+        }
       }
-    }
 
     &__title-h2 {
       font-family: 'Times New Roman';
