@@ -253,5 +253,70 @@
 
   .hp-section-common {
     padding: 120px 85px 50px 85px;
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__first-row {
+      display: flex;
+      justify-content: left;
+      margin-bottom: -16px;
+      gap: 26px;
+      align-items: center;
+
+      &--wrapper {
+        width: 518px;
+      }
+    }
+
+    &__second-row {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      gap: 20px;
+
+      &-text-wrapper {
+        width: 312px;
+      }
+    }
+
+    &__title-h2 {
+      font-family: 'Times New Roman';
+      font-size: 32px;
+      line-height: 1.15;
+      color: $TextColorGreyLight;
+      margin-bottom: 4px;
+    }
+
+    &__title-h3 {
+      font-size: 64px;
+      line-height: 1.07;
+      margin-bottom: 24px;
+    }
+
+    &__image-1 {
+      display: block;
+      max-width: 460px;
+      margin-left: 0;
+      margin-top: -32px;
+    }
+
+    &__image-2 {
+      display: inline-block;
+      max-width: 460px;
+    }
+
+    &__paragraph {
+      min-width: 518px;
+      font-size: 16px;
+      margin-bottom: 0;
+
+      &--golden {
+        min-width: 312px;
+        font-size: 16px;
+      }
+    }
   }
 }
