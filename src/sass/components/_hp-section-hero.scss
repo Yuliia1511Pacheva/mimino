@@ -12,7 +12,7 @@
     background-image: linear-gradient(to right,
             rgba(0, 0, 0, 0.65),
             rgba(0, 0, 0, 0.65)),
-      url(/src/images/bar.jpg);
+      url(/src/images/bar_mobile.jpg);
     text-align: center;
 
  &__title{
@@ -136,6 +136,7 @@
     
 }
 }
+
 .hero__social{
     display: flex;
 
@@ -158,8 +159,47 @@
     fill: $TextColorYellow;
 }
 
+@media (min-resolution: 2dppx){
+    .hero{
+        background-image:  linear-gradient(to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)),
+             url(/src/images/bar_mobile@2x.jpg);
+    }
+}
 
-
+@media screen and (min-width: $tablet) {
+        .hero {
+            background-image:  linear-gradient(to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)),
+             url(/src/images/bar_tablet.jpg);
+        }
+        @media (min-resolution: 2dppx){
+         .hero {
+            background-image:  linear-gradient(to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)),
+             url(/src/images/bar_tablet@2x.jpg);
+        }
+        }
+    }
+    @media screen and (min-width: $desktop) {
+        .hero {
+            background-image:  linear-gradient(to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)),
+             url(/src/images/bar.jpg);
+        }
+        @media (min-resolution: 2dppx){
+         .hero {
+            background-image:  linear-gradient(to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)),
+             url(/src/images/bar@2x.jpg);
+        }
+        }
+    }
 
 
 
