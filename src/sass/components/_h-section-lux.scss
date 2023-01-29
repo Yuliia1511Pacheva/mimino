@@ -1,24 +1,62 @@
 .hotel-lux {
-  padding: 32px 15px;
+  padding: 32px 0;
+
   @media screen and (min-width: 1024px) {
     display: flex;
     flex-wrap: wrap;
-    padding: 62px 47px 40px;
+    padding: 62px 0 40px;
   }
 
   @media screen and (min-width: 1280px) {
-    padding: 72px 85px 40px;
+    padding: 72px 0 40px;
   }
-  &__text--up {
-    margin-bottom: 8px;
-    font-family: 'Times New Roman';
-    font-size: 20px;
-    line-height: 1.15;
-    color: $TextColorGreyLight;
+  &--flex {
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  &__text {
+    word-wrap: break-word;
+    max-width: 338px;
 
     @media screen and (min-width: 1024px) {
-      font-size: 32px;
+      margin-right: 26px;
+      max-width: 423px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-right: 48px;
+      max-width: 507px;
+    }
+    &--up {
+      margin-bottom: 8px;
+      font-family: 'Times New Roman';
+      font-size: 20px;
       line-height: 1.15;
+      color: $TextColorGreyLight;
+
+      @media screen and (min-width: 1024px) {
+        font-size: 32px;
+        line-height: 1.15;
+      }
+    }
+    &--down {
+      max-width: 258px;
+      margin-bottom: 32px;
+      font-family: 'Montserrat';
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 1.25;
+      letter-spacing: 0.02em;
+      color: $TextColorGrey;
+      @media screen and (min-width: 1024px) {
+        max-width: 439px;
+        font-size: 16px;
+      }
+      @media screen and (min-width: 1280px) {
+        max-width: 400px;
+      }
     }
   }
   &__title {
@@ -31,7 +69,11 @@
     color: $TextColorBrownLight;
 
     @media screen and (min-width: 1024px) {
+      margin-bottom: 62px;
       font-size: 64px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 72px;
     }
   }
   &__subtitle {
@@ -43,34 +85,19 @@
     letter-spacing: 0.05em;
     color: $TextColorBlack;
     &--uppercase {
+      display: inline;
       text-transform: uppercase;
     }
     @media screen and (min-width: 1024px) {
+      margin-bottom: 16px;
       font-size: 30px;
     }
     @media screen and (min-width: 1280px) {
+      margin-bottom: 24px;
       font-size: 36px;
     }
   }
-  &__text--down {
-    max-width: 258px;
-    margin-bottom: 32px;
-    font-family: 'Montserrat';
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    color: $TextColorGrey;
-    @media screen and (min-width: 1024px) {
-      max-width: 439px;
-      margin-right: 26px;
-      font-size: 16px;
-    }
-    @media screen and (min-width: 1280px) {
-      max-width: 400px;
-      margin-right: 155px;
-    }
-  }
+
   &__images {
     margin: 0 0 32px auto;
     width: 244px;
@@ -90,16 +117,11 @@
     margin: 0 auto;
     display: block;
     max-width: 236px;
-    &--test {
-      width: 236px;
-      height: 48px;
-      cursor: pointer;
-      &:not(:last-child) {
-        margin-bottom: 16px;
-      }
-    }
     @media screen and (min-width: 1024px) {
       margin: 0 0 0 auto;
+    }
+    & .button:not(:last-child) {
+      margin-bottom: 16px;
     }
   }
 }

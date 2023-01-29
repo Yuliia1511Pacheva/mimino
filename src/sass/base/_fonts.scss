@@ -70,9 +70,9 @@
     font-style: normal;
     font-weight: 700;
     src: local(''),
-        url('../fonts/TimesNewRomanMTStd-Bold.woff2') format('woff2'),
+        url('../fonts/times-nr-cyr-mt-bold.woff2') format('woff2'),
         /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('../fonts/TimesNewRomanMTStd-Bold.woff') format('woff');
+        url('../fonts/TimesNewRomanPS-BoldMT.woff') format('woff');
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -81,8 +81,8 @@
     font-style: normal;
     font-weight: 400;
     src: local(''),
-        url('../fonts/TimesNewRomanMTStd.woff2') format('woff2'),
+        url('../fonts/times-new-roman-cyr-400.woff2') format('woff2'),
         /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('../fonts/TimesNewRomanMTStd.woff') format('woff');
+        url('../fonts/TimesNewRomanPSMT.woff') format('woff');
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
