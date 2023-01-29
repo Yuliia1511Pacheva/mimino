@@ -10,10 +10,36 @@
                 <h3 class="hp-section-common__title-h3">MIMIHO</h3>
                 <p class="hp-section-common__paragraph">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
             </div>
-            <img class="hp-section-common__image-1" 
-            srcset="/src/images/restaurant-interior-mobile@2x.jpg 2x"
-            src="/src/images/restaurant-interior-mobile.jpg" 
-            alt="interior design">
+            <picture>
+
+                <source
+                srcset="/src/images/hp-section-common-1_desktop.jpg 1x, /src/images/hp-section-common-1_desktop@2x.jpg 2x"
+                media="(min-width: 1280px)"
+                sizes="width: 460px"
+                >
+
+                <source
+                srcset="/src/images/hp-section-common-1_tablet.jpg 1x, /src/images/hp-section-common-1_tablet@2x.jpg 2x"
+                media="(min-width: 1024px)"
+                sizes="width: 400px"
+                >
+
+                <source
+                srcset="/src/images/restaurant-interior-mobile.jpg 1x, /src/images/restaurant-interior-mobile@2x.jpg 2x"
+                media="(min-width: 414px)"
+                sizes="width: 244px"
+                >
+
+                <source
+                srcset="/src/images/restaurant-interior-mobile.jpg 1x, /src/images/restaurant-interior-mobile@2x.jpg 2x"
+                media="(max-width: 413px)"
+                sizes="max-width: 244px"
+                >
+
+                <img class="hp-section-common__image-1" 
+                src="/src/images/restaurant-interior-mobile.jpg" 
+                alt="interior design">
+            </picture>
         </div>
          <!--Second row-->
          <div class="hp-section-common__second-row">
