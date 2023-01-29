@@ -24,90 +24,10 @@
       justify-content: center;
       align-items: center;
       gap: 20px;
-    }
 
-    &__title-h2 {
-      font-family: 'Times New Roman';
-      font-size: 20px;
-      line-height: 1.15;
-      color: $TextColorGreyLight;
-      margin-bottom: 12px;
-    }
-
-    &__title-h3 {
-      font-family: 'Film P3';
-      font-weight: 700;
-      font-size: 40px;
-      line-height: 1.07;
-      letter-spacing: 0.3em;
-      color: $TextColorBrownLight;
-      margin-bottom: 12px;
-    }
-
-    &__image-1 {
-      display: block;
-      max-width: 244px;
-      box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-      border-radius: 2px;
-      margin-left: auto;
-    }
-
-    &__image-2 {
-      display: block;
-      max-width: 200px;
-      box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-      border-radius: 2px;
-    }
-
-    &__paragraph {
-      max-width: 258px;
-      font-family: 'Montserrat';
-      font-weight: 600;
-      font-size: 12px;
-      line-height: 1.25;
-      letter-spacing: 0.02em;
-      color: $TextColorGrey;
-      margin-bottom: 28px;
-
-      &--golden {
-        font-family: 'Montserrat';
-        font-weight: 600;
-        font-size: 12px;
-        line-height: 1.25;
-        letter-spacing: 0.02em;
-        color: $TextColorBrown;
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 414px) {
-  .container {
-    width: $mobile;
-  }
-  .hp-section-common {
-    padding: 16px 15px 20px 15px;
-
-    &__wrapper {
-      display: flex;
-    }
-
-    &__first-row {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin-bottom: 32px;
-
-      &--wrapper{
+      &-text-wrapper{
         max-width: 258px;
       }
-    }
-
-    &__second-row {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
     }
 
     &__title-h2 {
@@ -165,6 +85,91 @@
   }
 }
 
+@media screen and (min-width: 414px) {
+  .container {
+    width: $mobile;
+  }
+  .hp-section-common {
+    padding: 16px 15px 20px 15px;
+
+    &__wrapper {
+      display: flex;
+    }
+
+    &__first-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 32px;
+    }
+
+    &__second-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+
+      &-text-wrapper{
+        width: 258px;
+      }
+    }
+
+    &__title-h2 {
+      font-family: 'Times New Roman';
+      font-size: 20px;
+      line-height: 1.15;
+      color: $TextColorGreyLight;
+      margin-bottom: 12px;
+    }
+
+    &__title-h3 {
+      font-family: 'Film P3';
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 1.07;
+      letter-spacing: 0.3em;
+      color: $TextColorBrownLight;
+      margin-bottom: 12px;
+    }
+
+    &__image-1 {
+      display: block;
+      max-width: 244px;
+      box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+      border-radius: 2px;
+      margin-left: auto;
+    }
+
+    &__image-2 {
+      display: block;
+      max-width: 200px;
+      box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+      border-radius: 2px;
+    }
+
+    &__paragraph {
+      max-width: 258px;
+      font-family: 'Montserrat';
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 1.25;
+      letter-spacing: 0.02em;
+      color: $TextColorGrey;
+      margin-bottom: 28px;
+
+      &--golden {
+        max-width: 163px;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        color: $TextColorBrown;
+      }
+    }
+  }
+}
+
 /*Tablet  - from 1024px*/
 @media screen and (min-width: $tablet) {
     .container {
@@ -172,7 +177,7 @@
       }
 
       .hp-section-common {
-        padding: 16px 15px 20px 15px;
+        padding: 120px 47px 32px 47px;
     
         &__wrapper {
           display: flex;
@@ -181,21 +186,22 @@
     
         &__first-row {
           display: flex;
-          justify-content: center;
+          justify-content: left;
           margin-bottom: 32px;
           gap: 26px;
           align-items: center;
-
-          &--wrapper{
-            max-width: 258px;
-          }
         }
     
         &__second-row {
           display: flex;
-          justify-content: center;
+          justify-content: left;
           align-items: center;
           gap: 20px;
+
+          &-text-wrapper{
+            width: 312px;
+          }
+         
         }
     
         &__title-h2 {
@@ -232,6 +238,7 @@
         }
     
         &__paragraph {
+          width: 439px;
           font-family: 'Montserrat';
           font-weight: 600;
           font-size: 12px;
@@ -241,6 +248,7 @@
           margin-bottom: 28px;
     
           &--golden {
+            width: 312px;
             font-family: 'Montserrat';
             font-weight: 600;
             font-size: 12px;
