@@ -1,0 +1,79 @@
+.rm-section-hero {
+  width: 100%;
+  padding-top: 483px;
+  padding-bottom: 40px;
+  background-image: url(../images/room-m1@1x.jpg);
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/room-m1@2x.jpg);
+  }
+
+  @media screen and (min-width: 1024px) {
+    position: relative;
+    width: 1024px;
+    padding-top: 468px;
+    padding-bottom: 102px;
+    // padding-bottom: 118px;
+    background-image: url(../images/room-t1@1x.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/room-t1@2x.jpg);
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    padding-top: 468px;
+    padding-bottom: 102px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 524px;
+    padding-bottom: 48px;
+  }
+}
+
+.rm-section-hero__title {
+  color: $TextColorWhite;
+  width: 325px;
+  margin-bottom: 14px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: calc(32 / 28);
+  letter-spacing: 0.05em;
+  @media screen and (min-width: 1024px) {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(41 / 36);
+    letter-spacing: 0.05em;
+  }
+}
+
+.rm-section-hero__text {
+  color: $TextColorWhite;
+  width: 325px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  letter-spacing: 0.02em;
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+  }
+}
+
+.rm-section-hero__button {
+  @media screen and (min-width: 1024px) {
+    position: absolute;
+    right: 47px;
+    bottom: 62px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    right: 85px;
+    bottom: 66px;
+  }
+}
