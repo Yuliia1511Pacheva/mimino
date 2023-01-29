@@ -97,6 +97,10 @@
       flex-wrap: wrap;
       justify-content: space-between;
       margin-bottom: 32px;
+
+      &--wrapper{
+        max-width: 258px;
+      }
     }
 
     &__second-row {
@@ -140,7 +144,7 @@
     }
 
     &__paragraph {
-      max-width: 258px;
+      
       font-family: 'Montserrat';
       font-weight: 600;
       font-size: 12px;
@@ -162,10 +166,92 @@
 }
 
 /*Tablet  - from 1024px*/
-@media screen and (min-width: 414px) {
+@media screen and (min-width: $tablet) {
     .container {
         width: $tablet;
       }
+
+      .hp-section-common {
+        padding: 16px 15px 20px 15px;
+    
+        &__wrapper {
+          display: flex;
+          flex-direction: column;
+        }
+    
+        &__first-row {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 32px;
+          gap: 26px;
+          align-items: center;
+
+          &--wrapper{
+            max-width: 258px;
+          }
+        }
+    
+        &__second-row {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+        }
+    
+        &__title-h2 {
+          font-family: 'Times New Roman';
+          font-size: 20px;
+          line-height: 1.15;
+          color: $TextColorGreyLight;
+          margin-bottom: 12px;
+        }
+    
+        &__title-h3 {
+          font-family: 'Film P3';
+          font-weight: 700;
+          font-size: 40px;
+          line-height: 1.07;
+          letter-spacing: 0.3em;
+          color: $TextColorBrownLight;
+          margin-bottom: 12px;
+        }
+    
+        &__image-1 {
+          display: block;
+          max-width: 244px;
+          box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+          border-radius: 2px;
+          margin-left: 0;
+        }
+    
+        &__image-2 {
+          display: inline-block;
+          max-width: 200px;
+          box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+          border-radius: 2px;
+        }
+    
+        &__paragraph {
+          font-family: 'Montserrat';
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 1.25;
+          letter-spacing: 0.02em;
+          color: $TextColorGrey;
+          margin-bottom: 28px;
+    
+          &--golden {
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 1.25;
+            letter-spacing: 0.02em;
+            color: $TextColorBrown;
+          }
+        }
+      }
+
+      
 }
 
 /*Desktop  - from 1280px*/
@@ -173,4 +259,6 @@
     .container {
         width: $desktop;
       }
+
+    
 }
