@@ -1,41 +1,85 @@
-.hp-section-common {
-  &__wrapper {
-    display: flex;
+/*Mobile style - up to 414px*/
+
+@media screen and (max-width: 414px) {
+  .container {
+    max-width: $mobile;
   }
 
-  &__title-h2 {
-    font-family: 'Times New Roman';
-    font-size: 20px;
-    line-height: 1.15;
-    color: $TextColorGreyLight;
-  }
+  .hp-section-common {
+    padding: 16px 15px 20px 15px;
 
-  &__title-h3 {
-    font-family: 'Film P3';
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 1.07;
-    letter-spacing: 0.3em;
-  }
+    &__wrapper {
+      display: flex;
+      
+    }
 
-  &__image-1 {
-    max-width: 244px;
-    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 2px;
-  }
+    &__first-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 32px;
+    }
 
-  &__image-2 {
-    max-width: 200px;
-    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 2px;
-  }
+    &__second-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
 
-  &__paragraph {
-    font-family: 'Montserrat';
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    color: $TextColorBrown;
+    &__title-h2 {
+      font-family: 'Times New Roman';
+      font-size: 20px;
+      line-height: 1.15;
+      color: $TextColorGreyLight;
+      margin-bottom: 12px;
+    }
+
+    &__title-h3 {
+      font-family: 'Film P3';
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 1.07;
+      letter-spacing: 0.3em;
+      color: $TextColorBrownLight;
+      margin-bottom: 12px;
+    }
+
+    &__image-1 {
+      max-width: 244px;
+      box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+      border-radius: 2px;
+      margin-left: auto;
+    }
+
+    &__image-2 {
+      max-width: 200px;
+      box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+      border-radius: 2px;
+    }
+
+    &__paragraph {
+      max-width: 258px;
+      font-family: 'Montserrat';
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 1.25;
+      letter-spacing: 0.02em;
+      color: $TextColorGrey;
+      margin-bottom: 28px;
+
+      &--golden {
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        color: $TextColorBrown;
+      }
+    }
   }
 }
+
+/*Tablet  - from 1024px*/
+
+/*Desktop  - from 1280px*/
