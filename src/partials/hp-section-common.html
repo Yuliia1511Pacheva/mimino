@@ -43,10 +43,36 @@
         </div>
          <!--Second row-->
          <div class="hp-section-common__second-row">
-            <img class="hp-section-common__image-2" 
-            srcset="/src/images/hp-section-common-2@2x.jpg 2x"
-            src="/src/images/hp-section-common-2.jpg" 
-            alt="interior design">
+            <picture>
+                
+                <source
+                srcset="/src/images/hp-section-common-2_desktop.jpg 1x, /src/images/hp-section-common-2_desktop@2x.jpg 2x"
+                media="(min-width: 1280px)"
+                sizes="width: 460px"
+                >
+
+                <source
+                srcset="/src/images/hp-section-common-2_tablet.jpg 1x, /src/images/hp-section-common-2_tablet@2x.jpg 2x"
+                media="(min-width: 1024px)"
+                sizes="width: 350px"
+                >
+
+                <source
+                srcset="/src/images/hp-section-common-2_desktop.jpg 1x 1x, /src/images/hp-section-common-2_desktop@2x.jpg 2x"
+                media="(min-width: 414px)"
+                sizes="width: 200px"
+                >
+
+                <source
+                srcset="/src/images/hp-section-common-2.jpg 1x, /src/images/hp-section-common-2@2x.jpg 2x"
+                media="(max-width: 413px)"
+                sizes="max-width: 200px">
+
+                <img class="hp-section-common__image-2" 
+                src="/src/images/hp-section-common-2.jpg" 
+                alt="interior design">
+
+            </picture>
             <div class="hp-section-common__second-row-text-wrapper">
                 <p class="hp-section-common__paragraph--golden">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
             </div>
