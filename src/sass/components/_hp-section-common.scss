@@ -88,7 +88,7 @@
   }
 }
 
-@media screen and (min-width: 414px) {
+@media screen and (min-width: $mobile) {
   .hp-section-common {
     padding-top: 16px;
     padding-bottom: 20px;
@@ -196,7 +196,7 @@
       margin-bottom: 32px;
       align-items: center;
       gap: 26px;
-      
+
       &-image {
         margin-left: auto;
       }
@@ -272,7 +272,7 @@
 }
 
 /*Desktop  - from 1280px*/
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: $desktop) {
 
   .hp-section-common {
     padding-top: 16px;
@@ -286,13 +286,16 @@
 
     &__first-row {
       display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
+      flex-wrap: nowrap;
+      flex-direction: row;
       margin-bottom: 32px;
-
+      align-items: center;
+      gap: 26px;
+      
       &-image {
         margin-left: auto;
       }
+
     }
 
     &__second-row {
@@ -304,6 +307,7 @@
       &-image {
         width: 100%;
       }
+
     }
 
     &__title-h2 {
@@ -340,6 +344,7 @@
     }
 
     &__paragraph {
+      max-width: 440px;
       font-family: 'Montserrat';
       font-weight: 600;
       font-size: 12px;
