@@ -7,48 +7,69 @@
   background-size: cover;
   padding-top: 483px;
   padding-bottom: 40px;
-  background-image: url(../images/room-m1@1x.jpg);
- 
+  @media screen and (min-width: 414.001px) and (max-width: 1023.999px){
+    padding-bottom: 118px;
+  }
+
+  background-image: url(../images/room-d1@1x.jpg);
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url(../images/room-m1@2x.jpg);
+    background-image: url(../images/room-d1@2x.jpg);
   }
 
   @media screen and (min-width: 1024px) {
     position: relative;
-    max-width: 1024px;
     padding-top: 468px;
-    padding-bottom: 102px;
-    // padding-bottom: 118px;
+    padding-bottom: 22px;
     background-image: url(../images/room-t1@1x.jpg);
-    
+
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
       background-image: url(../images/room-t1@2x.jpg);
     }
   }
-  @media screen and (min-width: 1024px) {
-    padding-top: 468px;
-    padding-bottom: 102px;
-  }
+
   @media screen and (min-width: 1280px) {
     padding-top: 524px;
     padding-bottom: 48px;
   }
 }
 
+.rm-section-hero__shadow {
+  position: absolute;
+  width: 100%;
+  height: 143px;
+  left: 0px;
+  top: -1px;
+
+  background: linear-gradient(
+    180deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0.55) 54.17%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  @media screen and (min-width: 1024px) {
+    height: 116px;
+  }
+  @media screen and (min-width: 1280px) {
+    height: 147px;
+  }
+}
+
 .rm-section-hero__title {
   color: $TextColorWhite;
-  width: 325px;
+  max-width: 350px;
+  font-family: 'Times New Roman', Times, serif;
   margin-bottom: 14px;
   font-weight: 700;
   font-size: 28px;
   line-height: calc(32 / 28);
   letter-spacing: 0.05em;
   @media screen and (min-width: 1024px) {
+    max-width: 550px;
     font-weight: 700;
     font-size: 36px;
     line-height: calc(41 / 36);
@@ -58,13 +79,14 @@
 
 .rm-section-hero__text {
   color: $TextColorWhite;
-  width: 325px;
+  max-width: 325px;
   margin-bottom: 30px;
   font-weight: 700;
   font-size: 12px;
   line-height: calc(15 / 12);
   letter-spacing: 0.02em;
   @media screen and (min-width: 1024px) {
+    max-width: 400px;
     margin-bottom: 24px;
     font-weight: 700;
     font-size: 16px;
@@ -74,10 +96,16 @@
 }
 
 .rm-section-hero__button {
-  margin-left: 109px;
-  @media screen and (min-width: 1024px) {
+  margin-left: 100px;
+  @media screen and (min-width: 414.001px) and (max-width: 1023.999px){
     position: absolute;
     content: " ";
+    right: 73px;
+    bottom: 40px;
+  }
+  @media screen and (min-width: 1024px) {
+    position: absolute;
+    content: ' ';
     right: 47px;
     bottom: 62px;
   }
@@ -88,55 +116,60 @@
   }
 }
 
-.rm-section-hero__socials{
+.rm-section-hero__socials {
   display: flex;
   flex-direction: column;
-  
 
-  @media screen and (max-width:1023px){
+  @media screen and (max-width: 1023px) {
     position: absolute;
-    content: " ";
+    content: ' ';
     bottom: 15px;
   }
 
-  @media screen and (min-width:1024px) {
+  @media screen and (min-width: 1024px) {
     flex-direction: row;
+    margin-bottom: 0px;
   }
 
-  @media screen and (min-width:1280px) {
-    
+  @media screen and (min-width: 1280px) {
   }
 }
-.rm-section-hero__link:not(:last-child){
+
+.rm-section-hero__link {
+  fill: $TextColorYellow;
+}
+
+.rm-section-hero__link:not(:last-child) {
   margin-bottom: 8px;
-  @media screen and (min-width:1024px) {
+  @media screen and (min-width: 1024px) {
     margin-right: 23px;
+    margin-bottom: 0px;
   }
 }
 
-.rm-section-hero__addres{
-  @media screen and (max-width:1023px) {
+.rm-section-hero__addres {
+  @media screen and (max-width: 1023px) {
     display: none;
   }
 
-  @media screen and (min-width:1024px) {
-    width: 285px;
-    height: 56px;
-    background-color: aquamarine;
+  @media screen and (min-width: 1024px) {
+    // width: 285px;
+    // height: 56px;
+    // background-color: aquamarine;
     margin-right: 40px;
   }
 
-  @media screen and (min-width:1280px) {
+  @media screen and (min-width: 1280px) {
     display: none;
   }
 }
 
-.rm-section-hero__contacts{
-  @media screen and (min-width:1024px) {
+.rm-section-hero__contacts {
+  @media screen and (min-width: 1024px) {
     display: flex;
     align-items: center;
-    position: absolute;
-    content: " ";
-    bottom: 22px;
+    // position: absolute;
+    // content: " ";
+    // bottom: 22px;
   }
 }
