@@ -1,0 +1,384 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  src: local(""), url("../fonts/montserrat-v25-latin_cyrillic-300.woff2") format("woff2"), url("../fonts/montserrat-v25-latin_cyrillic-300.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/montserrat-v25-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/montserrat-v25-latin_cyrillic-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("../fonts/montserrat-v25-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/montserrat-v25-latin_cyrillic-500.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""), url("../fonts/montserrat-v25-latin_cyrillic-600.woff2") format("woff2"), url("../fonts/montserrat-v25-latin_cyrillic-600.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/montserrat-v25-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/montserrat-v25-latin_cyrillic-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: "Film P3";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/FilmP3Bold.woff2") format("woff2"), url("../fonts/FilmP3Bold.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/TimesNewRomanMTStd-Bold.woff2") format("woff2"), url("../fonts/TimesNewRomanMTStd-Bold.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/TimesNewRomanMTStd.woff2") format("woff2"), url("../fonts/TimesNewRomanMTStd.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+body {
+  font-family: Montserrat, sans-serif;
+  background-color: #FFFDEE;
+  color: #7A7A7A;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 414px) {
+  .container {
+    width: 414px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 1024px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
+}
+
+.hero {
+  position: relative;
+  max-width: 1280px;
+  height: 720px;
+  padding-top: 164px;
+  padding-bottom: 65px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/src/images/bar.jpg);
+  text-align: center;
+}
+
+.hero__title {
+  margin-bottom: 24px;
+  font-family: "Film P3", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+  color: #FFFFFF;
+}
+@media screen and (min-width: 1024px) {
+  .hero__title {
+    margin-bottom: 16px;
+    font-size: 128px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__title {
+    margin-bottom: 32px;
+  }
+}
+
+.hero__subtitle {
+  margin-bottom: 40px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+@media screen and (min-width: 1024px) {
+  .hero__subtitle {
+    margin-bottom: 56px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__subtitle {
+    margin-bottom: 64px;
+  }
+}
+
+.hero__discr {
+  margin-bottom: 113px;
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+@media screen and (min-width: 1024px) {
+  .hero__discr {
+    margin-bottom: 145px;
+    font-size: 36px;
+    line-height: 1.14;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__discr {
+    margin-bottom: 144px;
+  }
+}
+
+.hero__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hero__link {
+  position: absolute;
+  top: 64px;
+  left: 130px;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  text-align: start;
+  color: #E5E5E5;
+}
+@media screen and (min-width: 1024px) {
+  .hero__link {
+    position: static;
+  }
+}
+
+.hero__icon {
+  display: block;
+  fill: #F3C653;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .hero__list {
+    display: flex;
+  }
+}
+
+.hero__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 1024px) {
+  .hero__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero__item + .hero__item {
+    margin-left: 60px;
+  }
+}
+
+.hotel-lux {
+  padding: 32px 15px;
+}
+@media screen and (min-width: 1024px) {
+  .hotel-lux {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 62px 47px 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hotel-lux {
+    padding: 72px 85px 40px;
+  }
+}
+.hotel-lux__text--up {
+  margin-bottom: 8px;
+  font-family: "Times New Roman";
+  font-size: 20px;
+  line-height: 1.15;
+  color: #B4B4B4;
+}
+@media screen and (min-width: 1024px) {
+  .hotel-lux__text--up {
+    font-size: 32px;
+    line-height: 1.15;
+  }
+}
+.hotel-lux__title {
+  margin-bottom: 32px;
+  font-family: "Film P3";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.075;
+  letter-spacing: 0.3em;
+  color: #494848;
+}
+@media screen and (min-width: 1024px) {
+  .hotel-lux__title {
+    font-size: 64px;
+  }
+}
+.hotel-lux__subtitle {
+  margin-bottom: 12px;
+  font-family: "Times New Roman";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+.hotel-lux__subtitle--uppercase {
+  text-transform: uppercase;
+}
+@media screen and (min-width: 1024px) {
+  .hotel-lux__subtitle {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hotel-lux__subtitle {
+    font-size: 36px;
+  }
+}
+.hotel-lux__text--down {
+  max-width: 258px;
+  margin-bottom: 32px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #7A7A7A;
+}
+@media screen and (min-width: 1024px) {
+  .hotel-lux__text--down {
+    max-width: 439px;
+    margin-right: 26px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hotel-lux__text--down {
+    max-width: 400px;
+    margin-right: 155px;
+  }
+}
+.hotel-lux__images {
+  margin: 0 0 32px auto;
+  max-width: 244px;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+@media screen and (min-width: 1024px) {
+  .hotel-lux__images {
+    max-width: 400px;
+    margin: -94px 0 89px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hotel-lux__images {
+    max-width: 460px;
+    margin: -104px 0 121px;
+  }
+}
+.hotel-lux__button {
+  margin: 0 auto;
+  display: block;
+  max-width: 236px;
+}
+.hotel-lux__button--test {
+  max-width: 236px;
+  height: 48px;
+  cursor: pointer;
+}
+.hotel-lux__button--test:not(:last-child) {
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 1024px) {
+  .hotel-lux__button {
+    margin: 0 0 0 auto;
+  }
+
+  max-width: 1280px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+}/*# sourceMappingURL=index.css.map */
