@@ -2,11 +2,13 @@
     position: relative;
     max-width: 100%;
     min-height: auto;
-    padding-top: 181px;
-    padding-bottom: 65px;
     margin-left: auto;
     margin-right: auto;
+
+    padding: 181px 15px 20px 20px;
+
     
+
     text-align: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -27,7 +29,11 @@
 
 
     @media screen and  (min-width: $tablet) {
+
+        
+
         max-width: 1024px;
+
         padding-top: 188px;
         padding-bottom: 15px;
         background-image:  linear-gradient(to right,
@@ -46,7 +52,11 @@
     }
 
     @media screen and  (min-width: $desktop) {
+
+        
+
         max-width: 1280px;
+
         padding-top: 164px;
         padding-bottom: 65px;
         background-image:  linear-gradient(to right,
@@ -69,6 +79,7 @@
     max-width: 303px;
     margin-left: auto;
     margin-right: auto;
+
     margin-bottom: 24px;
     font-family: 'Film P3', sans-serif;
     font-style: normal;
@@ -138,7 +149,11 @@
     @media screen and (min-width: $tablet) {
         margin-bottom: 25px;
         justify-content: space-between;
+
+        
+
       
+
     }
 
      @media screen and (min-width: $desktop) {
@@ -199,12 +214,14 @@
 
 .hero__social{
     display: flex;
+
+
     
     @media screen  and (min-width: $tablet){
       padding-left: 47px; 
     }
-    
 
+    
     @media screen  and (min-width: $desktop){
       display: none; 
     }
@@ -218,3 +235,4 @@
     display: block;
     fill: $TextColorYellow;
 }
+
