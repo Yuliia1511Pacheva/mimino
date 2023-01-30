@@ -93,7 +93,6 @@
     max-width: 254px;
     max-height: 254px;
   }
-
 }
 
 @media screen and (min-width: $mobile) {
@@ -189,7 +188,6 @@
     max-width: 254px;
     max-height: 254px;
   }
-
 }
 
 /*Tablet  - from 1024px*/
@@ -302,8 +300,11 @@
     display: flex;
 
     &__wrapper {
-      display: flex;
       flex-wrap: wrap;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
     &__first-row {

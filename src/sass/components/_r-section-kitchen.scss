@@ -283,8 +283,11 @@
       display: flex;
   
       &__wrapper {
-        display: flex;
         flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
   
       &__first-row {
