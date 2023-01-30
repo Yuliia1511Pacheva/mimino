@@ -6,6 +6,8 @@
     padding-bottom: 65px;
     margin-left: auto;
     margin-right: auto;
+    padding: 181px 15px 20px 20px;
+    text-align: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -13,7 +15,55 @@
             rgba(0, 0, 0, 0.65),
             rgba(0, 0, 0, 0.65)),
       url(/src/images/bar_mobile.jpg);
-    text-align: center;
+    
+
+    @media (min-resolution: 2dppx){
+    
+        background-image:  linear-gradient(to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)),
+             url(/src/images/bar_mobile@2x.jpg);
+    }
+
+
+    @media screen and  (min-width: $tablet) {
+        max-width: 1024px;
+        padding-top: 188px;
+        padding-bottom: 15px;
+        background-image:  linear-gradient(to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)),
+             url(/src/images/bar_tablet.jpg);
+
+       @media (min-resolution: 2dppx){
+            background-image:  linear-gradient(to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)),
+             url(/src/images/bar_tablet@2x.jpg);
+        
+        }     
+
+    }
+
+    @media screen and  (min-width: $desktop) {
+        max-width: 1280px;
+        padding-top: 164px;
+        padding-bottom: 65px;
+        background-image:  linear-gradient(to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)),
+             url(/src/images/bar.jpg);
+
+       @media (min-resolution: 2dppx){
+    
+            background-image:  linear-gradient(to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)),
+             url(/src/images/bar@2x.jpg);
+        
+        }
+    }
+        
 
  &__title{
     max-width: 303px;
@@ -29,7 +79,9 @@
     color: $TextColorWhite;
     
     @media screen and (min-width: $tablet) {
+        
         margin-bottom: 16px;
+        max-width: 404px;
         font-size: 128px;
     }
 
@@ -85,18 +137,22 @@
     margin-bottom: 58px;
     @media screen and (min-width: $tablet) {
         margin-bottom: 25px;
-        
+        justify-content: space-between;
+        padding-left: 47px;
+        padding-right: 47px;
     }
 
      @media screen and (min-width: $desktop) {
         margin-bottom: 0;
+        padding-left: 85px;
+        padding-right: 85px;
     }
 
 }
   &__link{
     position: absolute;
     top: 64px;
-    left: 130px;
+    right: 20px;
     display: flex;
     align-items: center;
     padding: 8px;
@@ -109,6 +165,7 @@
     letter-spacing: 0.01em;
     text-align: start;
     color: $SecondaryTextColor;
+    
      
     
     @media screen and (min-width: $tablet) {
@@ -140,12 +197,13 @@
 }
 }
 
+
 .hero__social{
     display: flex;
-
+    
     @media screen  and (min-width: $tablet){
-          padding-left: 67px;
-} 
+      padding-left: 47px; 
+    }
     
 
     @media screen  and (min-width: $desktop){
@@ -161,54 +219,3 @@
     display: block;
     fill: $TextColorYellow;
 }
-
-@media (min-resolution: 2dppx){
-    .hero{
-        background-image:  linear-gradient(to right,
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)),
-             url(/src/images/bar_mobile@2x.jpg);
-    }
-}
-
-@media screen and (min-width: $tablet) {
-        .hero {
-            background-image:  linear-gradient(to right,
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)),
-             url(/src/images/bar_tablet.jpg);
-        }
-        @media (min-resolution: 2dppx){
-         .hero {
-            background-image:  linear-gradient(to right,
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)),
-             url(/src/images/bar_tablet@2x.jpg);
-        }
-        }
-    }
-    @media screen and (min-width: $desktop) {
-        .hero {
-            background-image:  linear-gradient(to right,
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)),
-             url(/src/images/bar.jpg);
-        }
-        @media (min-resolution: 2dppx){
-         .hero {
-            background-image:  linear-gradient(to right,
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)),
-             url(/src/images/bar@2x.jpg);
-        }
-        }
-    }
-
-
-
-
-
-
-
-
-
