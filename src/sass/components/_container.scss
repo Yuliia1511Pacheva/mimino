@@ -8,7 +8,7 @@
     max-width: $mobile;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  @media screen and (min-width: 768px) and (max-width: $desktop) {
     max-width: $tablet;
     padding: 0 47px;
   }
