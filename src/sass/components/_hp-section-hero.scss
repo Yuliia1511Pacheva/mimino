@@ -5,7 +5,7 @@
     margin-left: auto;
     margin-right: auto;
 
-    padding: 181px 15px 20px 20px;
+    padding: 181px 15px 20px 15px;
 
     
 
@@ -150,16 +150,12 @@
         margin-bottom: 25px;
         justify-content: space-between;
 
-        
-
-      
 
     }
 
      @media screen and (min-width: $desktop) {
         margin-bottom: 0;
-        padding-left: 85px;
-        padding-right: 85px;
+       
     }
 
 }
@@ -217,10 +213,7 @@
 
 
     
-    @media screen  and (min-width: $tablet){
-      padding-left: 47px; 
-    }
-
+   
     
     @media screen  and (min-width: $desktop){
       display: none; 
