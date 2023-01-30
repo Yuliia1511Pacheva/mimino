@@ -1,0 +1,33 @@
+.restaurant {
+    padding-top: 24px;
+    padding-bottom: 40px;
+
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65)),
+    url(../images/restor-mob1x.jpg);
+}
+
+.restaurant__pretitle {
+    font-family: 'Film P3';
+    font-style: 'Bold';
+    font-size: 40px;
+    line-height: calc(43/40);
+    color: $TextColorWhite;
+}
+
+.restaurant__title {
+    font-family: 'Montserrrat';
+    font-style: 'Bold';
+    font-size: 20px;
+    line-height: calc(24/20);
+    color: $TextColorWhite;
+}
+
+.restaurant__text {
+    font-family: 'Montserrrat';
+        font-style: 'SemiBold';
+        font-size: 12px;
+        line-height: calc(15/12);
+        color: $TextColorGreyLight;
+
+}
