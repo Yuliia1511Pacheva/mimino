@@ -15,6 +15,12 @@
         justify-content: space-between;
         align-items: flex-end;
         
+        @media screen and (min-width: 1024px) {
+            min-width: 1024px;
+            padding-left: 47px;
+            padding-right: 47px;
+            align-items: center;
+        }
     }
 }
 
@@ -29,40 +35,79 @@
 
     margin-top: 16px;
 
+    @media screen and (min-width: 1024px) {
+        font-size: 40px;
+        line-height: 1.07;
 
-    
+        margin-top: 24px;
+        margin-bottom: 33px;
+    }
 }
 
 .site-nav {
+    display: flex;
     &__list {
         display: flex;
+        align-items: center;
+        margin-right: 20px;
+
+        @media screen and (min-width: 1024px) {
+            margin-right: 72px;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
     }
 
     &__item {
-        &:nth-child(odd) {
-            margin-right: 6px;
+       margin-right: 6px;
+        @media screen and (min-width: 1024px) {
+            margin-right: 32px;
         }
-        &:nth-child(even) {
-            margin-right: 20px;
-        }
-        &:last-child {
-            margin: 0;
 
+
+        &:last-child {
+            margin-right: 0;
         }
         
-
     }
     
     &__link {
+        display: flex;
+        align-items: center;
         font-family: 'Montserrat';
-        font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 20px;
         letter-spacing: 0.02em;
-    
-    
+        
         color: #F3C653;
+
+        @media screen and (min-width: 1024px) {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        &--tell {
+            @media screen and (min-width: 1024px) {
+                border: 1px solid rgba(243, 198, 83, 0.7);
+                border-radius: 2px;
+                padding: 12px 8px;
+            }
+        }
     }
 
+    &__span {
+        display: none;
+        @media screen and (min-width: 1024px) {
+            display: block;
+            margin-left: 4px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 0.02em;
+            color: #FFFFFF;
+        }
+    }
 }
