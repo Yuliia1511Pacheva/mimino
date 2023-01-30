@@ -140,7 +140,9 @@
 
         &__link {
             fill: rgba(243, 198, 83, 0.7);
-            
+                transition-property: fill;
+                transition-duration: 250ms;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
             &:hover,
             &:focus {
