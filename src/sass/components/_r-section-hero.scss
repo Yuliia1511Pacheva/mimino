@@ -1,0 +1,80 @@
+.hero--restaurant{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)),
+      url(/src/images/glasses_mobile.jpg);
+          @media (min-resolution: 2dppx){
+    
+        background-image:  linear-gradient(to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)),
+             url(/src/images/glasses_mobile@2x.jpg);
+    }
+
+
+    @media screen and  (min-width: $tablet) {
+       
+        padding-top: 188px;
+        padding-bottom: 15px;
+        background-image:  linear-gradient(to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)),
+             url(/src/images/glasses_tablet.jpg);
+
+       @media (min-resolution: 2dppx){
+            background-image:  linear-gradient(to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)),
+             url(/src/images/glasses_tablet@2x.jpg);
+        
+        }     
+
+    }
+
+    @media screen and  (min-width: $desktop) {
+        
+        padding-top: 164px;
+        padding-bottom: 65px;
+        background-image:  linear-gradient(to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)),
+             url(/src/images/glasses.jpg);
+
+       @media (min-resolution: 2dppx){
+    
+            background-image:  linear-gradient(to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)),
+             url(/src/images/glasses@2x.jpg);
+        
+        }
+    }
+}
+
+.hero__title--restaurant{
+    @media screen and (min-width: $tablet) {
+        
+        margin-bottom: 20px;
+       
+    }
+
+     @media screen and (min-width: $desktop) {
+        margin-bottom: 32px;
+    }
+}
+
+.hero__subtitle--restaurant{
+    margin-bottom: 44px;
+    
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 56px;
+        
+    }
+
+     @media screen and (min-width: $desktop) {
+        margin-bottom: 64px;
+    }
+}
