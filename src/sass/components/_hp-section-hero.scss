@@ -2,6 +2,8 @@
     position: relative;
     max-width: 414px;
     min-height: auto;
+    padding-top: 181px;
+    padding-bottom: 65px;
     margin-left: auto;
     margin-right: auto;
     padding: 181px 15px 20px 20px;
@@ -64,9 +66,9 @@
         
 
  &__title{
+    max-width: 303px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 303px;
     margin-bottom: 24px;
     font-family: 'Film P3', sans-serif;
     font-style: normal;
