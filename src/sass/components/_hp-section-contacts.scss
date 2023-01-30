@@ -3,6 +3,31 @@
     padding-bottom: 32px;
     overflow: hidden;
 
+    @media screen and (min-width: 1024px) {
+        padding-top: 56px;
+        padding-bottom: 51px;
+    }
+
+    &__img {
+        display: block;
+        width: 384px;
+
+        @media screen and (min-width: 1024px) {
+            width: 535px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            width: 634px;
+        }
+    }
+
+    &__wrap {
+        @media screen and (min-width: 1024px) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
     &__text {
         font-family: Montserrat;
         font-weight: 500;
@@ -46,6 +71,12 @@
         border: 0.5px solid $TextColorYellow;
         border-radius: 2px;
         background-color: $TextColorWhite;
+
+        @media screen and (min-width: 1024px) {
+        margin-top: 8px;
+        margin-bottom: 35px;
+        max-width: 264px;
+        }
     }
 
     &__item-address {
@@ -56,16 +87,33 @@
         padding-bottom: 8px;
         padding-right: 33px;
         padding-left: 10px;
+
+        @media screen and (min-width: 1024px) {
+            margin-bottom: 51px;
+            margin-left: 0;
+            margin-top: 48px;
+            max-width: 285px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            margin-bottom: 80px;
+        }
+    }
+
+    &__item-restaurant {
+        @media screen and (min-width: 1024px) {
+            max-width: 146px;
+        }
     }
 
     &__list {
        display: flex;
        align-items: center;
-    }
-}
 
-.container {
-    max-width: 414px;
+        @media screen and (min-width: 1024px) {
+        display: block;
+        }
+    }
 }
 
 .hidden-title {
@@ -82,20 +130,32 @@
 }
 
 .brand-title {
-    font-family: Film P3;
+    font-family: "Film P3";
     font-weight: 700;
     font-size: 40px;
-    line-height: 1.075;
+    line-height: 1.07;
     letter-spacing: 0.3em;
     color: $TextColorBrownLight;
+    margin-bottom: 12px;
+    
+    @media screen and (min-width: 1024px) {
+        margin-bottom: 8px;
+    }
 }
 
 .section-subtitle {
-    margin-top: 12px;
     font-family: Montserrat;
     font-weight: 600;
     font-size: 16px;
     line-height: 1.218;
     letter-spacing: 0.02em;
     color: $TextColorGrey;
+
+    @media screen and (min-width: 1024px) {
+        margin-bottom: 52px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 40px;
+    }
 }
