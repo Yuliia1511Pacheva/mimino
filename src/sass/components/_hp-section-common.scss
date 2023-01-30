@@ -307,7 +307,7 @@
       gap: 20px;
 
       &-image {
-        width: 100%;
+        margin-right: auto;
         position: relative;
         z-index: 2;
       }
@@ -358,7 +358,7 @@
       margin-bottom: 28px;
 
       &--golden {
-        max-width: 300px;
+        max-width: 312px;
         font-family: 'Montserrat';
         font-weight: 600;
         font-size: 16px;
