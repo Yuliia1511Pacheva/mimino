@@ -160,3 +160,43 @@
         }
     }
 }
+
+.add-link {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 64px;
+    left: auto;
+    right: 15px;
+    min-width: 210px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+
+    color: #E5E5E5;
+    fill: #F3C653;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+
+    transition-property: fill;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    @media screen and (min-width: 1024px) {
+        display: none;
+    }
+    
+    &:focus,
+    &:hover {
+        border-color: #F3C653;
+    }
+    &__icon {
+        margin-left: 6px;
+        margin-right: 8px;
+    }
+
+}
