@@ -1,12 +1,12 @@
 .hero{
     position: relative;
-    max-width: 414px;
+    max-width: 100%;
     min-height: auto;
     padding-top: 181px;
     padding-bottom: 65px;
     margin-left: auto;
     margin-right: auto;
-    padding: 181px 15px 20px 20px;
+    
     text-align: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -138,8 +138,7 @@
     @media screen and (min-width: $tablet) {
         margin-bottom: 25px;
         justify-content: space-between;
-        padding-left: 47px;
-        padding-right: 47px;
+      
     }
 
      @media screen and (min-width: $desktop) {
