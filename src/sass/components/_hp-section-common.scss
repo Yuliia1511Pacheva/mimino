@@ -180,7 +180,7 @@
 @media screen and (min-width: $tablet) {
 
   .hp-section-common {
-    padding-top: 120px;
+    margin-top: -50px;
     padding-bottom: 32px;
     display: flex;
 
@@ -199,6 +199,8 @@
 
       &-image {
         margin-left: auto;
+        position: relative;
+        z-index: 2;
       }
 
     }
