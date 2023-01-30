@@ -1,17 +1,39 @@
 <section class="restaurant">
     <div class="container">
-        <p class="restaurant__pretitle">Amet minim mollit non</p>
-        <h1 class="restaurant__title">MIMIHO</h1>
-        <p class="restaurant__discription">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-            Velit officia consequat duis enim velit
-            mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-        <picture>
-            <source srcset="./images/cooking-desk1.jpg 1x, ./images/cooking-desk2.jpg 2x" media="(min-width: 1280px)">
-            <source srcset="./images/cooking-tab1.jpg 1x, ./images/cooking-tab2.jpg 2x" media="(min-width: 1024px)">
-            <source srcset="./images/cooking-mob1.jpg 1x, ./images/cooking-mob2.jpg 2x" media="(max-width: 1023px)">
-            <img src="./images/cooking-tab1.jpg" alt="Приготування м'яса">  
-        </picture>
-
+        <div class="restaurant__block">
+            <p class="restaurant__pretitle">Amet minim mollit non</p>
+            <h1 class="restaurant__title">MIMIHO</h1>
+            <p class="restaurant__discription">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                Velit officia consequat duis enim velit
+                mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            <div class="restaurant__thumb">
+                <picture>
+                    <source srcset="./images/cooking-desk1.jpg 1x, ./images/cooking-desk2.jpg 2x"
+                        media="(min-width: 1280px)" sizes="460">
+                    <source srcset="./images/cooking-tab1.jpg 1x, ./images/cooking-tab2.jpg 2x"
+                        media="(min-width: 1024px)" sizes="400px">
+                    <source srcset="./images/cooking-mob1.jpg 1x, ./images/cooking-mob2.jpg 2x"
+                        media="(max-width: 1023px)" sizes="243px">
+                    <img src="./images/cooking-mob1.jpg" alt="Приготування м'яса">
+                </picture>
+            </div>
+            <div class="restaurant__dish">
+                <picture>
+                    <source srcset="./images/dish-desk1.jpg 1x, ./images/dish-desk2.jpg 2x" media="(min-width: 1280px)"
+                        sizes="460px">
+                    <source srcset="./images/dish-tab1.jpg 1x, ./images/dish-tab2.jpg 2x" media="(min-width: 1024px)"
+                        sizes="350px">
+                    <source srcset="./images/dish-mob1.jpg 1x, ./images/dish-mob2.jpg 2x" media="(max-width: 1023px)"
+                        sizes="200px">
+                    <img src="./images/dish-mob1.jpg" alt="Готове блюдо">
+                </picture>
+                <p class="restaurant__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                    Velit
+                    officia consequat duis
+                    enim velit
+                    mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            </div>
+        </div>
     </div>
 
 </section>

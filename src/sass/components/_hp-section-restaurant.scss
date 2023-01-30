@@ -1,27 +1,145 @@
 .restaurant {
     background-color: $BgColorPrimary;
+
+}
+
+.restaurant__block {
+    padding-top: 16px;
+    padding-bottom: 28px;
+    max-width: 414px;
+    margin: 0 auto;
+    position: relative;
+
+    @media screen and (min-width: 1024px) {
+        padding-top: 120px;
+        padding-bottom: 40px;
+        max-width: 1024px;
+    }
+
+    @media screen and (min-width: 1280px) {
+
+        max-width: 1280px;
+    }
+
 }
 
 .restaurant__pretitle {
-   color: $TextColorGreyLight;
-   font-size: 20px;
-   font-family: 'Times New Roman';
-   font-style: Regular;
-   line-height: 100%;
+    color: $TextColorGreyLight;
+    font-size: 20px;
+    font-family: 'Times New Roman';
+    font-style: Regular;
+    line-height: calc(23/20);
+    margin-bottom: 12px;
+
+    @media screen and (min-width: 1024px) {
+        font-size: 32px;
+        line-height: calc(37/32);
+        margin-bottom: 4px;
+    }
+
+
+
 }
 
-
-   .restaurant__title {
+.restaurant__title {
+    font-family: 'Film P3';
     font-style: bold;
     font-size: 40px;
-    line-height: 100%;
+    line-height: calc(43/40);
+    letter-spacing: 0, 3em;
     color: $TextColorBrownLight;
+    margin-bottom: 12px;
+
+
+    @media screen and (min-width: 1024px) {
+        font-size: 64px;
+        line-height: calc(69/64);
+        margin-bottom: 24px;
+    }
+
+
+
+}
+
+.restaurant__thumb {
+    margin-left: auto;
+    max-width: 210px;
+
+    @media screen and (min-width: 1024px) {
+        max-width: 400px;
+        position: absolute;
+        top: -32px;
+        left: 512px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        top: -33px;
+        max-width: 460px;
+    }
+
+
 }
 
 .restaurant__discription {
     font-family: 'Montserrat';
+    font-style: 'SemiBolt';
     font-size: 12px;
     line-height: calc(15/12);
     color: $TextColorGrey;
     max-width: 258px;
+    margin-bottom: 28px;
+    letter-spacing: 0, 02em;
+
+    @media screen and (min-width: 1024px) {
+        font-size: 16px;
+        line-height: calc(20/16);
+        max-width: 439px;
+        margin-bottom: 142px;
+        margin-right: 26px;
+
+
+    }
+
+
+}
+
+
+.restaurant__dish {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 32px;
+
+    @media screen and (min-width: 1024px) {
+        gap: 48px;
+        justify-content: flex-start;
+
+    }
+
+    @media screen and (min-width: 1280px) {
+        gap: 32px;
+
+
+    }
+
+
+}
+
+
+.restaurant__text {
+    font-family: 'Montserrat';
+    font-style: 'SemiBold';
+    font-size: 12px;
+    line-height: calc(15/12);
+    color: $TextColorBrown;
+    max-width: 163px;
+
+    @media screen and (min-width: 1024px) {
+        font-size: 16px;
+        line-height: calc(20/16);
+        max-width: 312px;
+    }
+
+
 }
