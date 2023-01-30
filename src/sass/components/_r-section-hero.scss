@@ -2,35 +2,51 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
+
     background-image: linear-gradient(to right,
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)),
-      url(/src/images/glasses_mobile.jpg);
-          @media (min-resolution: 2dppx){
+                rgba(0, 0, 0, 0.65),
+                rgba(0, 0, 0, 0.65)),
+            url(/src/images/glasses.jpg);
     
-        background-image:  linear-gradient(to right,
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)),
-             url(/src/images/glasses_mobile@2x.jpg);
-    }
+        @media (min-resolution: 2dppx) {
+    
+            background-image: linear-gradient(to right,
+                    rgba(0, 0, 0, 0.65),
+                    rgba(0, 0, 0, 0.65)),
+                url(/src/images/glasses@2x.jpg);
+    
+        }
+
+    // background-image: linear-gradient(to right,
+    //         rgba(0, 0, 0, 0.65),
+    //         rgba(0, 0, 0, 0.65)),
+    //   url(/src/images/glasses_mobile.jpg);
+    //       @media (min-resolution: 2dppx){
+    
+    //     background-image:  linear-gradient(to right,
+    //         rgba(0, 0, 0, 0.65),
+    //         rgba(0, 0, 0, 0.65)),
+    //          url(/src/images/glasses_mobile@2x.jpg);
+    // }
 
 
     @media screen and  (min-width: $tablet) {
        
         padding-top: 188px;
         padding-bottom: 15px;
-        background-image:  linear-gradient(to right,
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)),
-             url(/src/images/glasses_tablet.jpg);
+    //     background-image:  linear-gradient(to right,
+    //         rgba(0, 0, 0, 0.65),
+    //         rgba(0, 0, 0, 0.65)),
+    //          url(/src/images/glasses_tablet.jpg);
 
-       @media (min-resolution: 2dppx){
-            background-image:  linear-gradient(to right,
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)),
-             url(/src/images/glasses_tablet@2x.jpg);
+    //    @media (min-resolution: 2dppx){
+    //         background-image:  linear-gradient(to right,
+    //         rgba(0, 0, 0, 0.65),
+    //         rgba(0, 0, 0, 0.65)),
+    //          url(/src/images/glasses_tablet@2x.jpg);
         
-        }     
+    //     }     
 
     }
 
@@ -38,19 +54,7 @@
         
         padding-top: 164px;
         padding-bottom: 65px;
-        background-image:  linear-gradient(to right,
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)),
-             url(/src/images/glasses.jpg);
-
-       @media (min-resolution: 2dppx){
-    
-            background-image:  linear-gradient(to right,
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)),
-             url(/src/images/glasses@2x.jpg);
         
-        }
     }
 }
 
