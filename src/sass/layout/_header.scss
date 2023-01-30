@@ -4,7 +4,6 @@
     position: absolute;
     z-index: 1;
 
-
     &__container {
         min-width: 414px;
         margin: 0 auto;
@@ -57,6 +56,7 @@
 
 .site-nav {
     display: flex;
+
     &__list {
         display: flex;
         align-items: center;
@@ -74,7 +74,8 @@
 
     &__item {
        margin-right: 6px;
-        @media screen and (min-width: 1024px) {
+
+       @media screen and (min-width: 1024px) {
             margin-right: 32px;
         }
 
@@ -113,6 +114,7 @@
 
     &__span {
         display: none;
+        
         @media screen and (min-width: 1024px) {
             display: block;
             margin-left: 4px;
@@ -137,10 +139,14 @@
         margin-left: 140px;
 
         &__link {
-            fill: #F3C653;
-            &--second {
-                fill: rgba(243, 198, 83, 0.7);
+            fill: rgba(243, 198, 83, 0.7);
+            
+
+            &:hover,
+            &:focus {
+                fill: #F3C653;
             }
+            
         }
     }
 }
