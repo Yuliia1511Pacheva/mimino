@@ -1,0 +1,105 @@
+.rm-section-comfort {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @media screen and (min-width: 1024px){
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 200px;
+}
+
+@media screen and (min-width: 1280px){
+    padding-bottom: 208px;
+  }
+
+}
+
+
+.rm-section-comfort__amenities {
+  margin-bottom: 32px;
+  
+}
+
+.rm-section-comfort__title {
+  color: $TextColorBlack;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: calc(37 / 32);
+  margin-bottom: 16px;
+}
+
+.rm-section-comfort__subtitle {
+  color: $TextColorBlack;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  margin-bottom: 16px;
+}
+
+.rm-section-comfort__text{
+    color: $TextColorGrey;
+    font-weight: 700;
+font-size: 16px;
+line-height: calc(20 / 16);
+letter-spacing: 0.02em;
+
+@media screen and (min-width: 1024px){
+    width: 757px;
+}
+}
+
+.rm-section-comfort__list {
+  margin-bottom: 32px;
+
+}
+
+.rm-section-comfort__content{
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        gap: 80px;
+      
+    }
+}
+
+// .rm-section-comfort__item{
+// }
+
+.rm-section-comfort__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.rm-section-comfort__button {
+  padding: 0px;
+  margin-bottom: 20px;
+}
+
+.rm-section-comfort__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+  color: $TextColorBrown;
+  font-weight: 500;
+font-size: 16px;
+line-height: calk(20 / 16);
+letter-spacing: 0.02em;
+}
+
+
+.rm-section-comfort__buttons{
+    text-align: center;
+    @media screen and (min-width: 1024px){
+        position: absolute;
+        right: 47px;
+        bottom: 40px;
+    }
+    @media screen and (min-width: 1280px){
+        right: 198px;
+        bottom: 48px;
+    }
+
+}
+
+.rm-section-comfort__icon{
+  margin-left: 20px;
+}
