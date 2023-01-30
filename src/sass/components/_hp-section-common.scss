@@ -1,9 +1,10 @@
 /*Mobile style - up to 414px*/
 
 @media screen and (max-width: 413px) {
-  
   .hp-section-common {
-    padding: 16px 15px 20px 15px;
+    padding-top: 16px;
+    padding-bottom: 20px;
+    display: flex;
 
     &__wrapper {
       display: flex;
@@ -15,6 +16,10 @@
       flex-wrap: wrap;
       flex-direction: column;
       margin-bottom: 32px;
+
+      &-image {
+        margin-left: auto;
+      }
     }
 
     &__second-row {
@@ -23,6 +28,9 @@
       align-items: center;
       gap: 20px;
 
+      &-image {
+        width: 100%;
+      }
     }
 
     &__title-h2 {
@@ -44,7 +52,7 @@
     }
 
     &__image-1 {
-      width: 244px;
+      width: 100%;
       display: block;
       box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
       border-radius: 2px;
@@ -53,7 +61,7 @@
 
     &__image-2 {
       display: block;
-      width: 200px;
+      width: 100%;
       box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
       border-radius: 2px;
     }
@@ -68,6 +76,7 @@
       margin-bottom: 28px;
 
       &--golden {
+        max-width: 300px;
         font-family: 'Montserrat';
         font-weight: 600;
         font-size: 12px;
@@ -80,9 +89,10 @@
 }
 
 @media screen and (min-width: 414px) {
-  
   .hp-section-common {
-    padding: 16px 15px 20px 15px;
+    padding-top: 16px;
+    padding-bottom: 20px;
+    display: flex;
 
     &__wrapper {
       display: flex;
@@ -94,6 +104,10 @@
       flex-wrap: wrap;
       flex-direction: column;
       margin-bottom: 32px;
+
+      &-image {
+        margin-left: auto;
+      }
     }
 
     &__second-row {
@@ -102,6 +116,9 @@
       align-items: center;
       gap: 20px;
 
+      &-image {
+        width: 100%;
+      }
     }
 
     &__title-h2 {
@@ -123,7 +140,7 @@
     }
 
     &__image-1 {
-      width: 244px;
+      width: 100%;
       display: block;
       box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
       border-radius: 2px;
@@ -132,7 +149,7 @@
 
     &__image-2 {
       display: block;
-      width: 200px;
+      width: 100%;
       box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
       border-radius: 2px;
     }
@@ -147,6 +164,7 @@
       margin-bottom: 28px;
 
       &--golden {
+        max-width: 300px;
         font-family: 'Montserrat';
         font-weight: 600;
         font-size: 12px;
@@ -160,75 +178,167 @@
 
 /*Tablet  - from 1024px*/
 @media screen and (min-width: $tablet) {
-  
 
   .hp-section-common {
-    padding: 120px 47px 32px 47px;
+    padding-top: 16px;
+    padding-bottom: 20px;
+    display: flex;
 
     &__wrapper {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-      }
+      display: flex;
+      flex-wrap: wrap;
+    }
 
     &__first-row {
       display: flex;
-      flex-direction: row;
-      justify-content: left;
-      margin-bottom: -16px;
-      gap: 26px;
-      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+      margin-bottom: 32px;
 
-      &--wrapper {
-        width: 439px;
+      &-image {
+        margin-left: auto;
       }
     }
 
     &__second-row {
-        display: flex;
-        justify-content: left;
-        align-items: center;
-        gap: 20px;
-  
-        &-text-wrapper {
-          width: 312px;
-        }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+
+      &-image {
+        width: 100%;
       }
+    }
 
     &__title-h2 {
       font-family: 'Times New Roman';
-      font-size: 32px;
+      font-size: 20px;
       line-height: 1.15;
       color: $TextColorGreyLight;
-      margin-bottom: 4px;
+      margin-bottom: 12px;
     }
 
     &__title-h3 {
-      font-size: 64px;
+      font-family: 'Film P3';
+      font-weight: 700;
+      font-size: 40px;
       line-height: 1.07;
-      margin-bottom: 24px;
+      letter-spacing: 0.3em;
+      color: $TextColorBrownLight;
+      margin-bottom: 12px;
     }
 
     &__image-1 {
-      min-width: 400px;
+      width: 100%;
       display: block;
-      margin-left: 0;
-      margin-top: -32px;
+      box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+      border-radius: 2px;
+      margin-left: auto;
     }
 
     &__image-2 {
-      display: inline-block;
-      width: 350px;
+      display: block;
+      width: 100%;
+      box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+      border-radius: 2px;
     }
 
     &__paragraph {
-      min-width: 439px;
-      font-size: 16px;
-      margin-bottom: 0;
+      font-family: 'Montserrat';
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 1.25;
+      letter-spacing: 0.02em;
+      color: $TextColorGrey;
+      margin-bottom: 28px;
 
       &--golden {
-        min-width: 312px;
-        font-size: 16px;
+        max-width: 300px;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        color: $TextColorBrown;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .hp-section-common {
+    padding-top: 16px;
+    padding-bottom: 20px;
+
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__first-row {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      margin-bottom: 32px;
+    }
+
+    &__second-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+
+    &__title-h2 {
+      font-family: 'Times New Roman';
+      font-size: 20px;
+      line-height: 1.15;
+      color: $TextColorGreyLight;
+      margin-bottom: 12px;
+    }
+
+    &__title-h3 {
+      font-family: 'Film P3';
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 1.07;
+      letter-spacing: 0.3em;
+      color: $TextColorBrownLight;
+      margin-bottom: 12px;
+    }
+
+    &__image-1 {
+      width: 100%;
+      display: block;
+      box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+      border-radius: 2px;
+      margin-left: auto;
+    }
+
+    &__image-2 {
+      display: block;
+      width: 100%;
+      box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+      border-radius: 2px;
+    }
+
+    &__paragraph {
+      font-family: 'Montserrat';
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 1.25;
+      letter-spacing: 0.02em;
+      color: $TextColorGrey;
+      margin-bottom: 28px;
+
+      &--golden {
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        color: $TextColorBrown;
       }
     }
   }
@@ -236,15 +346,16 @@
 
 /*Desktop  - from 1280px*/
 @media screen and (min-width: 1280px) {
-  
 
   .hp-section-common {
-    padding: 120px 85px 50px 85px;
-    
+    padding-top: 120px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
 
     &__wrapper {
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
       align-content: center;
     }
 
@@ -256,7 +367,7 @@
       align-items: center;
 
       &--wrapper {
-        width: 518px;
+        max-width: 518px;
       }
     }
 
@@ -267,7 +378,7 @@
       gap: 20px;
 
       &-text-wrapper {
-        width: 312px;
+        max-width: 312px;
       }
     }
 
@@ -286,24 +397,23 @@
     }
 
     &__image-1 {
-      min-width: 460px;
+      width: 100%;
       display: block;
       margin-left: 0;
-      margin-top: -32px;
     }
 
     &__image-2 {
       display: inline-block;
-      width: 460px;
+      width: 100%;
     }
 
     &__paragraph {
-      min-width: 518px;
+      max-width: 518px;
       font-size: 16px;
       margin-bottom: 0;
 
       &--golden {
-        min-width: 312px;
+        max-width: 312px;
         font-size: 16px;
       }
     }
