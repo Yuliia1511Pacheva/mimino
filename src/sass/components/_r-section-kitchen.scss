@@ -2,12 +2,24 @@
 
 @media screen and (max-width: 413px) {
 
-
+  .swiper {
+    width: 515px;
+    height: 245px;
+    
+    &-wrapper{
+      background-color: transparent;
+    }
+  }
   
     .hp-section-common {
       padding-top: 16px;
       padding-bottom: 20px;
       display: flex;
+
+      &__slider-container{
+        height: 245px;
+        margin-left: 85px;
+      }
   
       &__wrapper {
         display: flex;
