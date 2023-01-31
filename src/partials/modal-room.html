@@ -1,0 +1,85 @@
+<div class="modal modal-room" data-modal="room">
+  <form name="room-form" autocomplete="on" novalidate>
+    <svg class="modal__cross js-modal-close" width="24" height="24">
+      <use href="./../src/images/sptite.svg#icon-x-black"></use>
+    </svg>
+    <p class="modal__title modal__title--room">ЗАБРОНЮВАТИ НОМЕР</p>
+    <div class="modal-room__first">
+      <div class="modai-input-wraper">
+        <input
+          type="text"
+          class="modal__input modal-room-name"
+          name="modal-room-name"
+          id="modal-room-name"
+          placeholder="Ваше ім’я"
+        />
+        <label class="modal__lable" for="modal-room-name"
+          >На кого забронювати номер?</label
+        >
+      </div>
+      <div class="modai-input-wraper">
+        <input
+          type="tel"
+          class="modal__input modal-room-phone js-inputmask"
+          name="modal-room-phone"
+          id="modal-room-phone"
+        />
+        <lable class="modal__lable" for="modal-room-phone"
+          >Номер телефону
+        </lable>
+      </div>
+    </div>
+    <div class="modal-room__second">
+      <div class="select-wrapper">
+        <select
+          name="modal-romms-numder"
+          class="modal-romms-numder modal__input js-select"
+          id="modal-romms-numder"
+        >
+          <option value="1">1</option>
+          <option value="2" selected>2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+        <label class="modal__lable" for="modal-romms-numder"
+          >Категорія номеру</label
+        >
+      </div>
+    </div>
+
+    <div class="modal-room__third">
+      <div class="select-wrapper">
+        <select
+          name="modal-romms__arrival"
+          class="modal-romms__arrival modal__input js-select"
+          id="modal-romms__arrival"
+        >
+          <option value="Сьогодні" selected>Сьогодні</option>
+          <option value="Завтра">Завтра</option>
+          <option value="Вчора">Вчора</option>
+        </select>
+        <label class="modal__lable" for="modal-romms__arrival"
+          >Дата заїзду</label
+        >
+      </div>
+
+      <div class="select-wrapper">
+        <select
+          name="modal-romms__togo"
+          class="modal-romms__togo modal__input js-select"
+          id="modal-romms__togo"
+        >
+          <option value="Сьогодні" selected>Сьогодні</option>
+          <option value="Завтра">Завтра</option>
+          <option value="Вчор">Вчора</option>
+        </select>
+        <label class="modal__lable" for="modal-romms__togo">Дата заїзду</label>
+      </div>
+    </div>
+
+    <button class="button-modal button-modal__phone" type="submit">
+      Оформити бронювання
+    </button>
+  </form>
+</div>
+<div class="overlay js-overlay-modal"></div>
