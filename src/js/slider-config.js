@@ -181,7 +181,7 @@ window.addEventListener('load', swiperSlider, false);
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 2,
       spaceBetween: 25,
-      slidesPerGroup: 2,
+      slidesPerGroup: 1,
       loop: true,
       loopFillGroupWithBlank: true,
       pagination: {
