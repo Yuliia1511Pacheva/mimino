@@ -11,26 +11,26 @@
     padding-bottom: 118px;
   }
 
-  background-image: url(../images/room-d1@1x.jpg);
+  background-image: url(../images/room-dt1@1x.jpg);
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url(../images/room-d1@2x.jpg);
+    background-image: url(../images/room-dt1@2x.jpg);
   }
 
-  @media screen and (min-width: 1024px) {
-    position: relative;
-    padding-top: 468px;
-    padding-bottom: 22px;
-    background-image: url(../images/room-t1@1x.jpg);
+  // @media screen and (min-width: 1024px) {
+  //   position: relative;
+  //   padding-top: 468px;
+  //   padding-bottom: 22px;
+  //   background-image: url(../images/room-t1@1x.jpg);
 
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url(../images/room-t1@2x.jpg);
-    }
-  }
+  //   @media screen and (min-device-pixel-ratio: 2),
+  //     screen and (min-resolution: 192dpi),
+  //     screen and (min-resolution: 2dppx) {
+  //     background-image: url(../images/room-t1@2x.jpg);
+  //   }
+  // }
 
   @media screen and (min-width: 1280px) {
     padding-top: 524px;
