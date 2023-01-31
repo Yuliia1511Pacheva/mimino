@@ -62,19 +62,35 @@
 }
 
 .button--reservtabler{
-    display: none;
+    
+    min-width: 236px;
+    padding: 14px 24px;
 
     @media screen and (min-width: $tablet) {
         display: block;
         min-width: 232px;
+        padding: 14px 24px;
         
         
     }
 }
 .button--reservroomr{
+    min-width: 232px;
+    padding: 14px 24px;
 
-@media screen and (min-width: $tablet) {
+}
+.hero__item--reservroomr{
+    @media screen and (min-width: $tablet) {
         display: none;
+       
+        
+    }
+}
+.button--revisionr{
+    display: none;
+@media screen and (min-width: $tablet) {
+    display: block;
+        padding: 14px 32px;
        
         
     }

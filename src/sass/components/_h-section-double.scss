@@ -93,8 +93,10 @@
       font-size: 36px;
     }
   }
-
   &__images {
+    z-index: 1;
+  }
+  &__img {
     margin: 0 0 32px auto;
     width: 244px;
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
@@ -119,5 +121,9 @@
     & .button:not(:last-child) {
       margin-bottom: 16px;
     }
+  }
+  &__slider {
+    display: flex;
+    align-items: center;
   }
 }
