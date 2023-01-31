@@ -9,17 +9,11 @@
         align-items: center;
         
         @media screen and (min-width: 1024px) {
-            min-width: 1024px;
-            padding-left: 47px;
-            padding-right: 47px;
-            align-items: center;
+            max-width: 1024px;
         }
         
         @media screen and (min-width: 1280px) {
             min-width: 1280px;
-            padding-left: 85px;
-            padding-right: 85px;
-            align-items: center;
         }
     }
 
@@ -35,11 +29,8 @@
     color: #F3C653;
 
     @media screen and (min-width: 1024px) {
-        font-size: 40px;
+        font-size: 64px;
         line-height: 1.07;
-
-        margin-top: 24px;
-        margin-bottom: 33px;
     }
 
     @media screen and (min-width: 1280px) {
@@ -51,8 +42,18 @@
     margin-top: 40px;
     margin-bottom: 40px;
 
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
     &__list{
         margin-bottom: 32px;
+        @media screen and (min-width: 1024px) {
+            margin-bottom: 0px;
+            margin-right: 137px;
+        }
     }
 
     &__item {
@@ -85,17 +86,55 @@
     align-items: center;
     gap: 20px;
 
-    &__link {
-        display: flex;
-        fill: #F3C653;
-        transition-property: fill;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 1024px) {
+        display: block;
+    }
 
-        &:hover,
-        &:focus {
-            fill:rgba(243, 198, 83, 0.7);
+    &__item {
+        @media screen and (min-width: 1024px) {
+            margin-bottom: 12px;
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 
+    &__span {
+        display: none;
+        @media screen and (min-width: 1024px) {
+            display: block;
+        }
+    }
+    &__link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        
+        
+        padding: 7px 12px;
+    
+    
+        color: #F3C653;
+        fill: #F3C653;
+        transition-property: fill, color, border-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        
+        @media screen and (min-width: 1024px) {
+            min-width: 144px;
+            border: 0.5px solid #F3C653;
+            border-radius: 2px;
+        }
+        &:hover,
+        &:focus {
+            color: rgba(243, 198, 83, 0.7);
+            fill:rgba(243, 198, 83, 0.7);
+            border-color: rgba(243, 198, 83, 0.7);
+        }
+    }
 }
