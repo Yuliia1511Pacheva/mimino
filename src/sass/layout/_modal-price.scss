@@ -1,0 +1,6 @@
+.modal-price__first {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+}

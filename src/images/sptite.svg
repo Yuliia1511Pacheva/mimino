@@ -7,9 +7,9 @@
 <path fill="none" stroke="#808080" style="stroke: var(--color2, #808080)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M27.428 3.429l-24 24"></path>
 <path fill="none" stroke="#808080" style="stroke: var(--color2, #808080)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M3.428 3.429l24 24"></path>
 </symbol>
-<symbol id="icon-x-black" viewBox="0 0 32 32">
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M27.429 3.429l-24 24"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M3.429 3.429l24 24"></path>
+<symbol id="icon-x-black" viewBox="0 0 24 24">
+<path d="M20.5715 2.57129L2.57153 20.5713" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2.57153 2.57129L20.5715 20.5713" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol>
 <symbol id="icon-white-right" viewBox="0 0 56 32">
 <path fill="#fff" style="fill: var(--color3, #fff)" d="M40.583 0l-2.67 2.689 11.329 11.409h-49.241v3.803h49.241l-11.329 11.409 2.67 2.689 15.888-16-15.888-16z"></path>
