@@ -62,8 +62,7 @@
 }
 
 .restaurant__title {
-    font-family: 'Montserrrat';
-    font-style: 'Bold';
+    
     font-size: 20px;
     line-height: calc(24/20);
     color: $TextColorWhite;
@@ -79,8 +78,8 @@
 }
 
 .restaurant__text {
-    font-family: 'Montserrrat';
-    font-style: 'SemiBold';
+    /*font-family: 'Montserrat';
+    font-style: 'SemiBold';*/
     font-size: 12px;
     line-height: calc(15/12);
     color: $TextColorGreyLight;
@@ -137,13 +136,14 @@
 
 .btn {
     margin-bottom: 16px;
+    margin-top: 80px;
 }
 
-.swiper-picture {
+/*.swiper-picture {
     margin-bottom: 80px;
 
     @media screen and (min-width:1024px) {
         margin-bottom: 0;
 
     }
-}
+}*/
