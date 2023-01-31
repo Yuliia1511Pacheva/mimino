@@ -62,14 +62,13 @@
 }
 
 .button--reservtable{
+    min-width: 236px;
+    padding: 14px 24px;
 
-@media screen and (min-width: $tablet) {
-        display: none;
-       
-        
-    }
 }
 .button--reservroom{
+    min-width: 232px;
+    padding: 14px 24px;
 @media screen and (min-width: $tablet) {
         padding: 14px 24px;
         min-width: 232px;
@@ -78,6 +77,13 @@
     @media screen and (min-width: $desktop) {
         padding: 14px 24px;
         min-width: 232px;
+        
+    }
+}
+.hero__item--reservtable{
+    @media screen and (min-width: $tablet) {
+        display: none;
+       
         
     }
 }
