@@ -141,4 +141,9 @@
 
 .swiper-picture {
     margin-bottom: 80px;
+
+    @media screen and (min-width:1024px) {
+        margin-bottom: 0;
+    
+        }
 }
