@@ -146,3 +146,50 @@ function swiperSlider() {
     // }
 }
 window.addEventListener('load', swiperSlider, false);
+
+
+
+
+// //JS Settings fror 1 image slider - please don't touch!//
+// const swiper = new Swiper('.swiper', {
+//     // Optional parameters
+    
+//     loop: true,
+  
+//     // // If we need pagination
+//     // pagination: {
+//     //   el: '.swiper-pagination',
+//     // },
+  
+//     // Navigation arrows
+//     navigation: {
+//       nextEl: '.swiper-button-next',
+//       prevEl: '.swiper-button-prev',
+//     },
+  
+//     // And if we need scrollbar
+//     scrollbar: {
+//       el: '.swiper-scrollbar',
+//     },
+//   });
+
+
+
+
+  // Settings for a slider with 2 pictures only - please don't touch!
+
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 2,
+      spaceBetween: 25,
+      slidesPerGroup: 2,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        // el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
