@@ -27,50 +27,26 @@
           url(/src/images/bar@2x.jpg);
 
 
-    // background-image: linear-gradient(to right,
-    //         rgba(0, 0, 0, 0.65),
-    //         rgba(0, 0, 0, 0.65)),
-    //   url(/src/images/bar_mobile.jpg);
     
-
-    // @media (min-resolution: 2dppx){
-    
-    //     background-image:  linear-gradient(to right,
-    //         rgba(0, 0, 0, 0.65),
-    //         rgba(0, 0, 0, 0.65)),
-    //          url(/src/images/bar_mobile@2x.jpg);
-   
-
 
     @media screen and  (min-width: $tablet) {
 
         
 
-        max-width: 1024px;
+         max-width: 1024px;
 
         padding-top: 188px;
         padding-bottom: 15px;
-      //   background-image:  linear-gradient(to right,
-      //       rgba(0, 0, 0, 0.65),
-      //       rgba(0, 0, 0, 0.65)),
-      //        url(/src/images/bar_tablet.jpg);
-
-      //  @media (min-resolution: 2dppx){
-      //       background-image:  linear-gradient(to right,
-      //       rgba(0, 0, 0, 0.65),
-      //       rgba(0, 0, 0, 0.65)),
-      //        url(/src/images/bar_tablet@2x.jpg);
+      
         
         }     
 
     }
 
     @media screen and  (min-width: $desktop) {
-
-        
-
-        // max-width: 1280px;
+    
         min-width: 1280px;
+
         padding-top: 164px;
         padding-bottom: 65px;
        
@@ -194,20 +170,22 @@
   &__list{
      @media screen and (min-width: $tablet) {
       display: flex;
+      gap: 40px;
     }
 
 }    
   &__item:not(:last-child){
     margin-bottom: 24px;
+    
     @media screen and (min-width: $tablet) {
       margin-bottom: 0;
     }
 }
-&__item + &__item{
-    @media screen  and (min-width: $tablet){
-      margin-left: 60px;  
-    }
-    
+// &__item:nth-child(even){
+//     @media screen  and (min-width: $tablet){
+//       margin-left: 60px;  
+//     }
+   
 }
 
 
@@ -233,4 +211,3 @@
     fill: $TextColorYellow;
 }
 
-}

@@ -1,0 +1,83 @@
+.hero--hotel{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+    background-image: linear-gradient(to right,
+                rgba(0, 0, 0, 0.65),
+                rgba(0, 0, 0, 0.65)),
+            url(/src/images/badroom.jpg);
+    
+        @media (min-resolution: 2dppx) {
+    
+            background-image: linear-gradient(to right,
+                    rgba(0, 0, 0, 0.65),
+                    rgba(0, 0, 0, 0.65)),
+                url(/src/images/badroom@2x.jpg);
+    
+        }
+   @media screen and  (min-width: $tablet) {
+       
+        padding-top: 188px;
+        padding-bottom: 15px;
+    
+    }
+
+    @media screen and  (min-width: $desktop) {
+        
+        padding-top: 164px;
+        padding-bottom: 65px;
+        
+    }
+}
+
+.hero__title--hotel{
+    margin-bottom: 32px;
+    
+}
+
+.hero__subtitle--hotel{
+    margin-bottom: 178px;
+    
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 218px;
+        
+    }
+
+     @media screen and (min-width: $desktop) {
+        margin-bottom: 242px;
+    }
+}
+
+.button--revision{
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+        display: block;
+        min-width: 232px;
+        padding: 14px 35px;
+        
+    }
+}
+
+.button--reservtable{
+
+@media screen and (min-width: $tablet) {
+        display: none;
+       
+        
+    }
+}
+.button--reservroom{
+@media screen and (min-width: $tablet) {
+        padding: 14px 24px;
+        min-width: 232px;
+        
+    }
+    @media screen and (min-width: $desktop) {
+        padding: 14px 24px;
+        min-width: 232px;
+        
+    }
+}
