@@ -7,7 +7,12 @@
     height: 245px;
     
     &-wrapper{
-      background-color: transparent;
+      background-color: transparent !important;
+      color: transparent;
+    }
+
+    .swiper > body{
+      background: #fff;
     }
   }
   
@@ -15,6 +20,7 @@
       padding-top: 16px;
       padding-bottom: 20px;
       display: flex;
+      overflow: hidden;
 
       &__slider-container{
         height: 245px;
@@ -105,10 +111,31 @@
   }
   
   @media screen and (min-width: $mobile) {
+
+    .swiper {
+      width: 515px;
+      height: 245px;
+      
+      &-wrapper{
+        background-color: transparent !important;
+        color: transparent;
+      }
+  
+      .swiper > body{
+        background: #fff;
+      }
+    }
+
     .hp-section-common {
       padding-top: 16px;
       padding-bottom: 20px;
       display: flex;
+      overflow: hidden;
+
+      &__slider-container{
+        height: 245px;
+        margin-left: 85px;
+      }
   
       &__wrapper {
         display: flex;
