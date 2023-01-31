@@ -1,6 +1,9 @@
 /*Mobile style - up to 414px*/
 
 @media screen and (max-width: 413px) {
+
+
+  
     .hp-section-common {
       padding-top: 16px;
       padding-bottom: 20px;
@@ -9,13 +12,14 @@
       &__wrapper {
         display: flex;
         flex-wrap: wrap;
+        gap: 32px;
       }
   
       &__first-row {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        margin-bottom: 32px;
+        margin-bottom: 0;
   
         &-image {
           margin-left: auto;
@@ -97,13 +101,14 @@
       &__wrapper {
         display: flex;
         flex-wrap: wrap;
+        gap: 32px;
       }
   
       &__first-row {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        margin-bottom: 32px;
+        margin-bottom: 0;
   
         &-image {
           margin-left: auto;
