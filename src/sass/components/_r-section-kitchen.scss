@@ -227,6 +227,13 @@
       margin-top: -50px;
       padding-bottom: 32px;
       display: flex;
+      overflow: hidden;
+
+      &__slider-container{
+        max-height: 194px;
+        max-width: 428px;
+        margin-left: 490px;
+      }
   
       &__wrapper {
         display: flex;
@@ -320,11 +327,26 @@
   
   /*Desktop  - from 1280px*/
   @media screen and (min-width: $desktop) {
+
+    .swiper {
+      width: 548px;
+      height: 245px;
+      
+      &-wrapper{
+        background-color: transparent !important;
+        color: transparent;
+      }
+  
+      .swiper > body{
+        background: #fff;
+      }
+    }
   
     .hp-section-common {
       margin-top: -50px;
       padding-bottom: 50px;
       display: flex;
+      overflow: hidden;
   
       &__wrapper {
         flex-wrap: wrap;
