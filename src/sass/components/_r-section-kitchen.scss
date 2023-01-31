@@ -1,21 +1,35 @@
 /*Mobile style - up to 414px*/
 
 @media screen and (max-width: 413px) {
+
+  .swiper {
+    width: 515px;
+    height: 245px;
+    
+  }
+  
     .hp-section-common {
       padding-top: 16px;
       padding-bottom: 20px;
       display: flex;
+      overflow: hidden;
+
+      &__slider-container{
+        height: 245px;
+        margin-left: 85px;
+      }
   
       &__wrapper {
         display: flex;
         flex-wrap: wrap;
+        gap: 32px;
       }
   
       &__first-row {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        margin-bottom: 32px;
+        margin-bottom: 0;
   
         &-image {
           margin-left: auto;
@@ -89,21 +103,34 @@
   }
   
   @media screen and (min-width: $mobile) {
+
+    .swiper {
+      width: 515px;
+      height: 245px;
+    }
+
     .hp-section-common {
       padding-top: 16px;
       padding-bottom: 20px;
       display: flex;
+      overflow: hidden;
+
+      &__slider-container{
+        height: 245px;
+        margin-left: 85px;
+      }
   
       &__wrapper {
         display: flex;
         flex-wrap: wrap;
+        gap: 32px;
       }
   
       &__first-row {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        margin-bottom: 32px;
+        margin-bottom: 0;
   
         &-image {
           margin-left: auto;
@@ -178,11 +205,23 @@
   
   /*Tablet  - from 1024px*/
   @media screen and (min-width: $tablet) {
+
+    .swiper {
+      width: 428px;
+      height: 194px;
+    }
   
     .hp-section-common {
       margin-top: -50px;
       padding-bottom: 32px;
       display: flex;
+      overflow: hidden;
+
+      &__slider-container{
+        margin-left: auto;
+        margin-right: 0;
+        margin-top: -60px;
+      }
   
       &__wrapper {
         display: flex;
@@ -211,6 +250,7 @@
         justify-content: center;
         align-items: center;
         gap: 20px;
+        margin-right: auto;
   
         &-image {
           margin-right: auto;
@@ -276,15 +316,32 @@
   
   /*Desktop  - from 1280px*/
   @media screen and (min-width: $desktop) {
+
+    .swiper {
+      width: 548px;
+      height: 254px;
+      
+     
+    }
   
     .hp-section-common {
       margin-top: -50px;
       padding-bottom: 50px;
       display: flex;
+      overflow: hidden;
+
+      &__slider-container{
+        margin-left: auto;
+        
+        margin-top: -60px;
+      }
   
       &__wrapper {
-        display: flex;
         flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
   
       &__first-row {
