@@ -84,6 +84,10 @@
           color: $TextColorBrown;
         }
       }
+
+      swiper-wrapper {
+        max-height: 317px;
+      }
     }
   }
   
@@ -292,10 +296,6 @@
         align-items: center;
         justify-content: flex-end;
         gap: 67px;
-        
-        // &-image {
-        //   margin-left: auto;
-        // }
   
       }
   
