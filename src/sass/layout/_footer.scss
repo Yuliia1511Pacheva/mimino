@@ -13,7 +13,7 @@
         }
         
         @media screen and (min-width: 1280px) {
-            min-width: 1280px;
+            max-width: 1280px;
         }
     }
 
@@ -32,10 +32,6 @@
         font-size: 64px;
         line-height: 1.07;
     }
-
-    @media screen and (min-width: 1280px) {
-        margin-right: 121px;
-    }
 }
 
 .footer-nav {
@@ -52,7 +48,10 @@
         margin-bottom: 32px;
         @media screen and (min-width: 1024px) {
             margin-bottom: 0px;
-            margin-right: 137px;
+            margin-right: 163px;
+        }
+        @media screen and (min-width: 1280px) {
+            margin-right: 199px;
         }
     }
 
@@ -115,7 +114,6 @@
         letter-spacing: 0.02em;
         
         
-        padding: 7px 12px;
     
     
         color: #F3C653;
@@ -127,6 +125,7 @@
         
         @media screen and (min-width: 1024px) {
             min-width: 144px;
+            padding: 7px 12px;
             border: 0.5px solid #F3C653;
             border-radius: 2px;
         }
