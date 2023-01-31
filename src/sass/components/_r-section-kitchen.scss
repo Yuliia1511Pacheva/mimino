@@ -107,15 +107,6 @@
     .swiper {
       width: 515px;
       height: 245px;
-      
-      &-wrapper{
-        background-color: transparent !important;
-        color: transparent;
-      }
-  
-      .swiper > body{
-        background: #fff;
-      }
     }
 
     .hp-section-common {
@@ -214,6 +205,11 @@
   
   /*Tablet  - from 1024px*/
   @media screen and (min-width: $tablet) {
+
+    .swiper {
+      width: 428px;
+      height: 194px;
+    }
   
     .hp-section-common {
       margin-top: -50px;
@@ -222,9 +218,8 @@
       overflow: hidden;
 
       &__slider-container{
-        max-height: 194px;
-        max-width: 428px;
-        margin-left: 490px;
+        margin-left: auto;
+        margin-right: 0;
         margin-top: -60px;
       }
   
@@ -324,16 +319,9 @@
 
     .swiper {
       width: 548px;
-      height: 245px;
+      height: 254px;
       
-      &-wrapper{
-        background-color: transparent !important;
-        color: transparent;
-      }
-  
-      .swiper > body{
-        background: #fff;
-      }
+     
     }
   
     .hp-section-common {
@@ -341,6 +329,12 @@
       padding-bottom: 50px;
       display: flex;
       overflow: hidden;
+
+      &__slider-container{
+        margin-left: auto;
+        
+        margin-top: -60px;
+      }
   
       &__wrapper {
         flex-wrap: wrap;
