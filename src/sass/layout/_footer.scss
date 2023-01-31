@@ -1,0 +1,101 @@
+.footer {
+    background-color: #0E0C07;
+
+    &__container {
+        min-width: 414px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+        @media screen and (min-width: 1024px) {
+            min-width: 1024px;
+            padding-left: 47px;
+            padding-right: 47px;
+            align-items: center;
+        }
+        
+        @media screen and (min-width: 1280px) {
+            min-width: 1280px;
+            padding-left: 85px;
+            padding-right: 85px;
+            align-items: center;
+        }
+    }
+
+}
+
+.footer-logo {
+    font-family: 'Film P3';
+    font-size: 40px;
+    line-height: 1.07;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+
+    color: #F3C653;
+
+    @media screen and (min-width: 1024px) {
+        font-size: 40px;
+        line-height: 1.07;
+
+        margin-top: 24px;
+        margin-bottom: 33px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-right: 121px;
+    }
+}
+
+.footer-nav {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    &__list{
+        margin-bottom: 32px;
+    }
+
+    &__item {
+        margin-bottom: 16px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__link {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+    
+        color: #F3C653;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover,
+        &:focus {
+            color: rgba(243, 198, 83, 0.7);
+        }
+    }
+}
+
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    &__link {
+        display: flex;
+        fill: #F3C653;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            fill:rgba(243, 198, 83, 0.7);
+        }
+    }
+
+}
