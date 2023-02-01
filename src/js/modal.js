@@ -52,6 +52,8 @@ document.addEventListener('DOMContentLoaded', function () {
             подложке и окну чтобы показать их. */
       modalElem.classList.add('active');
       overlay.classList.add('active');
+      /*Додає на body клас, щоб вікно було не активне */
+      document.body.classList.add("modal-open");
     }); // end click
   }); // end foreach
 
@@ -61,6 +63,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
       parentModal.classList.remove('active');
       overlay.classList.remove('active');
+      /*Забирає клас, щоб сторінка прогортувалась далі */
+      document.body.classList.remove("modal-open");
+
     });
   }); // end foreach
 
