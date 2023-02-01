@@ -10,10 +10,13 @@
 
     &__img {
         display: block;
-        width: 384px;
+        min-width: 384px;
+        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
 
         @media screen and (min-width: 1024px) {
             width: 535px;
+            // display: block;
         }
 
         @media screen and (min-width: 1280px) {
@@ -25,6 +28,7 @@
         @media screen and (min-width: 1024px) {
             display: flex;
             justify-content: space-between;
+            align-items: center;
         }
     }
 
@@ -36,6 +40,7 @@
         color: $TextColorBrown;
     }
 
+//  позиціонування марджінами
     &__text-restaurant {
         margin-right: 22px;
     }
@@ -68,7 +73,7 @@
         display: flex;
         gap: 8px;
         align-items: center;
-        border: 0.5px solid $TextColorYellow;
+        outline: 0.5px solid $TextColorYellow;
         border-radius: 2px;
         background-color: $TextColorWhite;
 
@@ -83,20 +88,22 @@
         margin-left: 121px;
         margin-bottom: 32px;
         max-width: 260px;
-        padding-top: 8px;
-        padding-bottom: 8px;
-        padding-right: 33px;
-        padding-left: 10px;
+        // padding-top: 8px;
+        // padding-bottom: 8px;
+        // padding-right: 33px;
+        // padding-left: 10px;
+        fill: $TextColorBrown;
 
         @media screen and (min-width: 1024px) {
             margin-bottom: 51px;
             margin-left: 0;
             margin-top: 48px;
             max-width: 285px;
+            margin-bottom: 0;
         }
 
         @media screen and (min-width: 1280px) {
-            margin-bottom: 80px;
+            margin-bottom: 0;
         }
     }
 
@@ -159,3 +166,11 @@
         margin-bottom: 40px;
     }
 }
+
+// .swiper-button-prev::after {
+//     opacity: 0 !important;
+// }
+
+// .swiper-button-next::after {
+//     opacity: 0 !important;
+// }

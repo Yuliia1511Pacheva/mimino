@@ -167,29 +167,4 @@ window.addEventListener('load', swiperSlider, false);
 //       prevEl: '.swiper-button-prev',
 //     },
   
-//     // And if we need scrollbar
-//     scrollbar: {
-//       el: '.swiper-scrollbar',
-//     },
-//   });
 
-
-
-
-  // Settings for a slider with 2 pictures only - please don't touch!
-
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 2,
-      spaceBetween: 25,
-      slidesPerGroup: 1,
-      loop: true,
-      loopFillGroupWithBlank: true,
-      pagination: {
-        // el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
