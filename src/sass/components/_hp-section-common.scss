@@ -47,22 +47,25 @@
 
 @media screen and (max-width: 413px) {
 
-  .swiper-button-next, .swiper-button-prev{
-   margin-top: 100px;
-  }
+  .swiper{
 
-  .swiper-button-prev{
-    margin-left: calc(100% - 250px);
-  }
-
-  .swiper-button-next{
-    margin-right: calc(100% - 280px);
-  }
-
-  .swiper-wrapper {
+    &-button-next, &-button-prev{
+      margin-top: 100px;
+     }
    
-    width: 515px;
+     &-button-prev{
+       margin-left: calc(100% - 250px);
+     }
+   
+     &-button-next{
+       margin-right: calc(100% - 280px);
+     }
+   
+     &-wrapper {
+       width: 515px;
+     }
   }
+
   
     .hp-section-common {
       padding-top: 16px;
@@ -162,9 +165,23 @@
   
   @media screen and (min-width: $mobile) {
 
-    .swiper {
-      width: 515px;
-      height: 245px;
+    .swiper{
+
+      &-button-next, &-button-prev{
+        margin-top: 100px;
+       }
+     
+       &-button-prev{
+         margin-left: calc(100% - 250px);
+       }
+     
+       &-button-next{
+         margin-right: calc(100% - 280px);
+       }
+     
+       &-wrapper {
+         width: 515px;
+       }
     }
 
     .hp-section-common {
@@ -174,8 +191,9 @@
       overflow: hidden;
 
       &__slider-container{
-        height: 245px;
+        min-height: 230px;
         margin-left: 85px;
+        overflow: hidden;
       }
   
       &__wrapper {
