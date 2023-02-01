@@ -1,0 +1,244 @@
+.triple {
+  overflow: hidden;
+  background-color: $BgColorSecondary;
+
+  @media screen and (min-width: 1024px) {
+    overflow: visible;
+  }
+
+  &__box {
+    position: relative;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    @media screen and (min-width: 1024px) {
+      padding-top: 66px;
+      padding-bottom: 40px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      padding-top: 72px;
+    }
+  }
+
+  &__company {
+    margin-bottom: 32px;
+    text-align: right;
+
+    @media screen and (min-width: 1024px) {
+      margin-right: 17px;
+      margin-bottom: 62px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-right: 57px;
+      margin-bottom: 72px;
+    }
+  }
+
+  &__text {
+    word-wrap: break-word;
+    max-width: 338px;
+
+    @media screen and (min-width: 1024px) {
+      max-width: 438px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      max-width: 525px;
+    }
+
+    &--up {
+      margin-bottom: 8px;
+      font-family: 'Times New Roman';
+      font-size: 20px;
+      line-height: 1.15;
+      color: $TextColorGreyLight;
+
+      @media screen and (min-width: 1024px) {
+        font-size: 32px;
+        line-height: 1.15;
+      }
+    }
+
+    &--down {
+      max-width: 258px;
+      margin-bottom: 32px;
+      font-family: 'Montserrat';
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 1.25;
+      letter-spacing: 0.02em;
+      color: $TextColorGrey;
+
+      @media screen and (min-width: 1024px) {
+        max-width: 439px;
+        font-size: 16px;
+      }
+
+      @media screen and (min-width: 1280px) {
+        max-width: 400px;
+      }
+    }
+  }
+
+  &__company-title {
+    margin-bottom: 32px;
+    font-family: 'Film P3';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.075;
+    letter-spacing: 0.3em;
+    color: $TextColorBrownLight;
+
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 62px;
+      font-size: 64px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 72px;
+    }
+  }
+
+  &__info {
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 1024px) {
+      width: 400px;
+      margin-left: auto;
+      margin-right: 17px;
+      margin-bottom: 169px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 454px;
+      margin-right: 57px;
+      margin-bottom: 188px;
+    }
+  }
+
+  &__title {
+    text-align: right;
+    margin-bottom: 12px;
+    font-family: 'Times New Roman';
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $TextColorBlack;
+
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 16px;
+      text-align: left;
+      font-size: 30px;
+      line-height: 1.13;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 36px;
+      margin-bottom: 24px;
+      letter-spacing: 0.01em;
+    }
+  }
+
+  &__img {
+    width: 244px;
+    margin-bottom: 32px;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    background-color: #dadada;
+
+    @media screen and (min-width: 1024px) {
+      position: absolute;
+      top: -32px;
+      left: 65px;
+      width: 400px;
+      margin: 0;
+    }
+
+    @media screen and (min-width: 1280px) {
+      left: 95px;
+      width: 460px;
+    }
+  }
+  &__wrapper {
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+  }
+  &__button {
+    margin: 0 auto;
+    display: block;
+    max-width: 236px;
+
+    @media screen and (min-width: 1024px) {
+      margin: 0 0 auto;
+    }
+
+    & .button:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.slider {
+  margin-right: -15px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1024px) {
+    margin: 0;
+  }
+
+  &__box {
+    transform: translateX(115px);
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 1024px) {
+      gap: 40px;
+      margin-bottom: 32px;
+      transform: translateX(0);
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__button-box {
+    display: flex;
+    justify-content: flex-end;
+    gap: 32px;
+    margin-right: 15px;
+
+    @media screen and (min-width: 1024px) {
+      justify-content: flex-start;
+      margin: 0;
+    }
+  }
+
+  &__img {
+    background-color: #dadada;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+  }
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+    fill: $TextColorBlack;
+  }
+}
