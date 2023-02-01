@@ -1,12 +1,71 @@
+// :root {
+//   --swiper-navigation-size: 30px; /* To edit the size of the arrows */
+//   --swiper-navigation-color: #000; /* To edit the color of the arrows */
+//   }
+
+/*Hidden heading*/
+
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.swiper{
+  overflow: visible;
+}
+
+// .swiper-wrapper{
+//   overflow: hidden;
+// }
+
+.swiper-button-next::after, .swiper-button-prev::after{
+  display: none;
+}
+
+.swiper-button-next {
+  background-image: url(/src/images/slider_arrow-right.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.swiper-button-prev {
+  background-image: url(/src/images/sliderl_arrow-left.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
 /*Mobile style - up to 414px*/
 
 @media screen and (max-width: 413px) {
 
-  .swiper {
-    width: 515px;
-    height: 245px;
-    
+  .swiper{
+
+    &-button-next, &-button-prev{
+      margin-top: 100px;
+     }
+   
+     &-button-prev{
+       margin-left: calc(100% - 250px);
+     }
+   
+     &-button-next{
+       margin-right: calc(100% - 280px);
+     }
+   
+     &-wrapper {
+       width: 515px;
+     }
   }
+
   
     .hp-section-common {
       padding-top: 16px;
@@ -15,8 +74,9 @@
       overflow: hidden;
 
       &__slider-container{
-        height: 245px;
+        min-height: 230px;
         margin-left: 85px;
+        overflow: hidden;
       }
   
       &__wrapper {
@@ -105,9 +165,23 @@
   
   @media screen and (min-width: $mobile) {
 
-    .swiper {
-      width: 515px;
-      height: 245px;
+    .swiper{
+
+      &-button-next, &-button-prev{
+        margin-top: 100px;
+       }
+     
+       &-button-prev{
+         margin-left: calc(100% - 250px);
+       }
+     
+       &-button-next{
+         margin-right: calc(100% - 280px);
+       }
+     
+       &-wrapper {
+         width: 515px;
+       }
     }
 
     .hp-section-common {
@@ -117,8 +191,9 @@
       overflow: hidden;
 
       &__slider-container{
-        height: 245px;
+        min-height: 230px;
         margin-left: 85px;
+        overflow: hidden;
       }
   
       &__wrapper {
@@ -207,9 +282,23 @@
   /*Tablet  - from 1024px*/
   @media screen and (min-width: $tablet) {
 
-    .swiper {
-      width: 428px;
-      height: 194px;
+    .swiper{
+
+      &-button-next, &-button-prev{
+        margin-top: 130px;
+       }
+     
+       &-button-prev{
+         margin-left: calc(100% - 130px);
+       }
+     
+       &-button-next{
+         margin-right: 0;
+       }
+     
+       &-wrapper {
+         width: 515px;
+       }
     }
   
     .hp-section-common {
@@ -219,6 +308,7 @@
       overflow: hidden;
 
       &__slider-container{
+        min-height: 280px;
         margin-left: auto;
         margin-right: 0;
         margin-top: -60px;
@@ -318,11 +408,23 @@
   /*Desktop  - from 1280px*/
   @media screen and (min-width: $desktop) {
 
-    .swiper {
-      width: 548px;
-      height: 254px;
-      
+    .swiper{
+
+      &-button-next, &-button-prev{
+        margin-top: 170px;
+       }
      
+       &-button-prev{
+         margin-left: calc(100% - 130px);
+       }
+     
+       &-button-next{
+         margin-right: 0;
+       }
+     
+       &-wrapper {
+         width: 515px;
+       }
     }
   
     .hp-section-common {
@@ -332,8 +434,9 @@
       overflow: hidden;
 
       &__slider-container{
+        min-height: 380px;
         margin-left: auto;
-        
+        min-height: 330px;
         margin-top: -60px;
       }
   
