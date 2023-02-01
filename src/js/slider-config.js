@@ -1,5 +1,5 @@
 function swiperSlider() {
-    const teamMain = document.querySelectorAll('[data-slider="team-sliders"]');
+    const teamMain = document.querySelectorAll('[data-slider="team-slider"]');
     //const heroSlider = document.querySelectorAll('[data-slider="hero-slider"]');
     if (teamMain) {
         teamMain.forEach(slider => {
@@ -59,7 +59,7 @@ function swiperSlider() {
                 breakpoints: {
                     // when window width is >= 320px
                     320: {
-                        slidesPerView: 1.3,
+                        slidesPerView: 1,
                         spaceBetween: 20,
                     },
                     // when window width is >= 768px
@@ -150,25 +150,21 @@ window.addEventListener('load', swiperSlider, false);
 
 
 
-//JS Settings from swiperjs.com - please don't touch!//
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
+// //JS Settings fror 1 image slider - please don't touch!//
+// const swiper = new Swiper('.swiper', {
+//     // Optional parameters
     
-    loop: true,
+//     loop: true,
   
-    // // If we need pagination
-    // pagination: {
-    //   el: '.swiper-pagination',
-    // },
+//     // // If we need pagination
+//     // pagination: {
+//     //   el: '.swiper-pagination',
+//     // },
   
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+//     // Navigation arrows
+//     navigation: {
+//       nextEl: '.swiper-button-next',
+//       prevEl: '.swiper-button-prev',
+//     },
   
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-});
+

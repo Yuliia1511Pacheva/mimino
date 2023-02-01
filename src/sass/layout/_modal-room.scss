@@ -1,0 +1,17 @@
+.modal-room {
+  @media screen and (min-width: $tablet) {
+    &__first {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__third {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__second {
+      display: flex;
+      justify-content: flex-end;
+    }
+    padding: 60px;
+  }
+}

@@ -1,37 +1,39 @@
 @import './common';
-@import "./base/fonts";
-@import "./base/vars";
-@import "./base/breakpoints";
-@import "./base/base";
+@import './base/fonts';
+@import './base/vars';
+@import './base/breakpoints';
+@import './base/base';
 
-@import "./utils/reset";
+@import './utils/reset';
 
-@import "./components/container";
+@import './components/container';
 
-@import "./layout/header";
-@import "./layout/footer";
+@import './layout/header';
+@import './layout/footer';
 
-@import "./components/hp-section-hero";
-@import "./components/hp-section-common";
-@import "./components/hp-section-restaurant";
-@import "./components/hp-section-room";
-@import "./components/hp-section-order";
-@import "./components/hp-section-contacts";
+@import './components/hp-section-hero';
+@import './components/hp-section-common';
+@import './components/hp-section-restaurant';
+@import './components/hp-section-room';
+@import './components/hp-section-order';
+@import './components/hp-section-contacts';
 
-@import "./components/r-section-hero";
-@import "./components/r-section-kitchen";
-@import "./components/r-section-menu";
+@import './components/r-section-hero';
+// @import './components/r-section-kitchen';
+@import './components/r-section-menu';
 
-@import "./components/h-section-hero";
-@import "./components/h-section-lux";
-@import "./components/h-section-triple";
-@import "./components/h-section-double";
+@import './components/h-section-hero';
+@import './components/h-section-lux';
+@import './components/h-section-triple';
+@import './components/h-section-double';
+@import './components/overlay';
+@import './components/modal';
 
-@import "./components/rm-section-hero";
-@import "./components/rm-section-comfort";
+@import './components/rm-section-hero';
+@import './components/rm-section-comfort';
 
-@import "./layout/modal-price";
-@import "./layout/modal-tabel";
-@import "./layout/modal-room";
+@import './layout/modal-price';
+@import './layout/modal-tabel';
+@import './layout/modal-room';
 
-@import "./components/button";
+@import './components/button';
