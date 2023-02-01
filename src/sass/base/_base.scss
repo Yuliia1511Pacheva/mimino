@@ -1,5 +1,8 @@
 body {
-    font-family: Montserrat, sans-serif;
-    background-color: $BgColorPrimary;
-    color: $TextColorGrey;
+  font-family: Montserrat, sans-serif;
+  background-color: $BgColorPrimary;
+  color: $TextColorGrey;
+}
+body.modal-open {
+  overflow: hidden;
 }
