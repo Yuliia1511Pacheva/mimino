@@ -104,11 +104,11 @@
 
     @media screen and (min-width: 1024px) {
       width: 400px;
-      margin: -94px 0 89px;
+      margin: -94px 0 48px;
     }
     @media screen and (min-width: 1280px) {
       width: 460px;
-      margin: -104px 0 121px;
+      margin: -104px 0 49px;
     }
   }
   &__button {
@@ -122,8 +122,30 @@
       margin-bottom: 16px;
     }
   }
-  &__slider {
+}
+.hotel-double__slider {
+  overflow: hidden;
+  @media screen and (min-width: $tablet) {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+  }
+}
+.swiper {
+  width: 404px;
+  height: 194px;
+  @media screen and (min-width: $tablet) {
+    width: 428px;
+    height: 194px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 548px;
+    height: 254px;
+  }
+}
+.hotel-section__slider-container {
+  margin-bottom: 20px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 0px;
   }
 }
