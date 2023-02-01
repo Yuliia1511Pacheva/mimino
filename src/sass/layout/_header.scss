@@ -5,6 +5,8 @@
     z-index: 1;
 
     &__container {
+        
+        @media screen and (min-width:414px) {
         min-width: 414px;
         margin: 0 auto;
         padding-left: 15px;
@@ -13,6 +15,7 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
+        }
 
         @media screen and (min-width:768px) {
             min-width: 768px;
@@ -166,7 +169,6 @@
     position: absolute;
     top: 64px;
     left: auto;
-    right: 15px;
     min-width: 210px;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -183,6 +185,11 @@
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 414px) {
+    right: 15px;
+    }
+   
 
 
     @media screen and (min-width: 1024px) {
