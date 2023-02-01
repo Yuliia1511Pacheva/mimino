@@ -12,7 +12,11 @@
     @media screen and (min-width: 1024px) {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: flex-start;
+      gap: 42px;
+    }
+    @media screen and (min-width: 1280px) {
+      gap: 155px;
     }
   }
   &__text {
@@ -144,8 +148,11 @@
   }
 }
 .hotel-section__slider-container {
-  margin-bottom: 20px;
+  margin: 0 0 20px -210px;
+  @media screen and (min-width: 600px) {
+    margin: 0 auto 20 auto;
+  }
   @media screen and (min-width: $tablet) {
-    margin-bottom: 0px;
+    margin: 0;
   }
 }
