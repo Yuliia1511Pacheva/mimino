@@ -1,3 +1,8 @@
+// :root {
+//   --swiper-navigation-size: 30px; /* To edit the size of the arrows */
+//   --swiper-navigation-color: #000; /* To edit the color of the arrows */
+//   }
+
 /*Hidden heading*/
 
 .visually-hidden{
@@ -10,6 +15,25 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+
+.swiper-button-next::after, .swiper-button-prev::after{
+  display: none;
+}
+
+.swiper-button-next {
+  background-image: url(/src/images/slider_arrow-right.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.swiper-button-prev {
+  background-image: url(/src/images/sliderl_arrow-left.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
 }
 
 /*Mobile style - up to 414px*/
