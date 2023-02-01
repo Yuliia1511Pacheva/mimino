@@ -17,6 +17,13 @@
   overflow: hidden;
 }
 
+.swiper{
+  overflow: visible;
+}
+
+// .swiper-wrapper{
+//   overflow: hidden;
+// }
 
 .swiper-button-next::after, .swiper-button-prev::after{
   display: none;
@@ -40,10 +47,21 @@
 
 @media screen and (max-width: 413px) {
 
-  .swiper {
+  .swiper-button-next, .swiper-button-prev{
+   margin-top: 100px;
+  }
+
+  .swiper-button-prev{
+    margin-left: calc(100% - 250px);
+  }
+
+  .swiper-button-next{
+    margin-right: calc(100% - 280px);
+  }
+
+  .swiper-wrapper {
+   
     width: 515px;
-    height: 245px;
-    
   }
   
     .hp-section-common {
@@ -53,8 +71,9 @@
       overflow: hidden;
 
       &__slider-container{
-        height: 245px;
+        min-height: 230px;
         margin-left: 85px;
+        overflow: hidden;
       }
   
       &__wrapper {
