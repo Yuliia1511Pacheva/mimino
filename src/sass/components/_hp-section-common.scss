@@ -282,9 +282,23 @@
   /*Tablet  - from 1024px*/
   @media screen and (min-width: $tablet) {
 
-    .swiper {
-      width: 428px;
-      height: 194px;
+    .swiper{
+
+      &-button-next, &-button-prev{
+        margin-top: 130px;
+       }
+     
+       &-button-prev{
+         margin-left: calc(100% - 130px);
+       }
+     
+       &-button-next{
+         margin-right: 0;
+       }
+     
+       &-wrapper {
+         width: 515px;
+       }
     }
   
     .hp-section-common {
@@ -294,6 +308,7 @@
       overflow: hidden;
 
       &__slider-container{
+        min-height: 280px;
         margin-left: auto;
         margin-right: 0;
         margin-top: -60px;
@@ -393,11 +408,23 @@
   /*Desktop  - from 1280px*/
   @media screen and (min-width: $desktop) {
 
-    .swiper {
-      width: 548px;
-      height: 254px;
-      
+    .swiper{
+
+      &-button-next, &-button-prev{
+        margin-top: 150px;
+       }
      
+       &-button-prev{
+         margin-left: calc(100% - 250px);
+       }
+     
+       &-button-next{
+         margin-right: calc(100% - 280px);
+       }
+     
+       &-wrapper {
+         width: 515px;
+       }
     }
   
     .hp-section-common {
@@ -408,7 +435,7 @@
 
       &__slider-container{
         margin-left: auto;
-        
+        min-height: 330px;
         margin-top: -60px;
       }
   
