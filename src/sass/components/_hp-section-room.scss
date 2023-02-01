@@ -1,6 +1,7 @@
 /*Mobile style - up to 414px*/
 
 @media screen and (max-width: 413px) {
+
   .hp-section-room {
     padding-top: 16px;
     padding-bottom: 20px;
@@ -116,6 +117,7 @@
 }
 
 @media screen and (min-width: $mobile) {
+
   .hp-section-room {
     padding-top: 16px;
     padding-bottom: 20px;
@@ -233,6 +235,7 @@
 
 /*Tablet  - from 1024px*/
 @media screen and (min-width: $tablet) {
+
   .hp-section-room {
     margin-top: -24px;
     padding-bottom: 32px;
@@ -349,6 +352,7 @@
 
 /*Desktop  - from 1280px*/
 @media screen and (min-width: $desktop) {
+  
   .hp-section-room {
     &__wrapper {
       display: flex;
