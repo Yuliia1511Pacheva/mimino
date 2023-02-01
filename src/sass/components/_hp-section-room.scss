@@ -46,18 +46,18 @@
       margin-bottom: 32px;
       margin-right: auto;
 
-      box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+      // box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
       border-radius: 2px;
     }
 
     &__image-2 {
-      box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+      // box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
       border-radius: 2px;
     }
 
     &__paragraph {
       max-width: 242px;
-      font-family: 'Montserrat';
+      font-family: 'Montserrat', sans-serif;
       font-weight: 600;
       font-size: 12px;
       line-height: 1.25;
@@ -67,7 +67,7 @@
 
       &--golden {
         max-width: 163px;
-        font-family: 'Montserrat';
+        font-family: 'Montserrat',sans-serif;
         font-weight: 600;
         font-size: 12px;
         line-height: 1.25;
@@ -128,12 +128,12 @@
       margin-bottom: 32px;
       margin-right: auto;
       width: 244px;
-      box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+      // box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
       border-radius: 2px;
     }
 
     &__image-2 {
-      box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+      // box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
       border-radius: 2px;
     }
 
@@ -218,13 +218,13 @@
     &__image-1 {
       margin-top: -24px;
       width: 400px;
-      box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+      // box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
       border-radius: 2px;
       margin-left: auto;
     }
 
     &__image-2 {
-      box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+      // box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
       border-radius: 2px;
     }
 
