@@ -9,95 +9,85 @@
 
     <div class="section-order__wrap">
       <div>
-        <div class="section-order__slider" data-slider="team-sliders">
-          <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <picture>
-                  <source
-                    srcset="
-                      ./images/order-slide-1.jpg    1x,
-                      ./images/order-slide-1@2x.jpg 2x
-                    "
-                    width="270"
-                    height="270"
-                  />
-                  <img
-                    src="./images/order-slide-1.jpg"
-                    alt="дві особи на рецепції в готелі"
-                    width="270"
-                    height="270"
-                  />
-                </picture>
-              </div>
-              <div class="swiper-slide">
-                <picture>
-                  <source
-                    srcset="
-                      ./images/order-slide-2.jpg    1x,
-                      ./images/order-slide-2@2x.jpg 2x
-                    "
-                    width="270"
-                    height="270"
-                  />
-                  <img
-                    src="./images/order-slide-2.jpg"
-                    alt="дві особи на рецепції в готелі"
-                    width="270"
-                    height="270"
-                  />
-                </picture>
-              </div>
-              <div class="swiper-slide">
-                <picture>
-                  <source
-                    srcset="
-                      ./images/order-slide-4.jpg    1x,
-                      ./images/order-slide-4@2x.jpg 2x
-                    "
-                    width="270"
-                    height="270"
-                  />
-                  <img
-                    src="./images/order-slide-4.jpg"
-                    alt="дві особи на рецепції в готелі"
-                    width="270"
-                    height="270"
-                  />
-                </picture>
-              </div>
-              ...
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="
+                    ./images/order-slide-1.jpg    1x,
+                    ./images/order-slide-1@2x.jpg 2x
+                  "
+                  width="270"
+                  height="270"
+                />
+                <img
+                  src="./images/order-slide-1.jpg"
+                  alt=""
+                  width="270"
+                  height="270"
+                />
+              </picture>
             </div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev">
-              <svg width="30">
-                <use href="./images/sptite.svg#icon-vector-left"></use>
-              </svg>
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="
+                    ./images/order-slide-2.jpg    1x,
+                    ./images/order-slide-2@2x.jpg 2x
+                  "
+                  width="270"
+                  height="270"
+                />
+                <img
+                  src="./images/order-slide-2.jpg"
+                  alt=""
+                  width="270"
+                  height="270"
+                />
+              </picture>
             </div>
-            <div class="swiper-button-next">
-              <svg width="30">
-                <use href="./images/sptite.svg#icon-vector-right"></use>
-              </svg>
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="
+                    ./images/order-slide-3.jpg    1x,
+                    ./images/order-slide-3@2x.jpg 2x
+                  "
+                  width="270"
+                  height="270"
+                />
+                <img
+                  src="./images/order-slide-3.jpg"
+                  alt=""
+                  width="270"
+                  height="270"
+                />
+              </picture>
             </div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
+            ...
           </div>
+
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <div class="swiper-scrollbar"></div>
         </div>
       </div>
 
       <div>
         <button
-          class="button button--black section-order__button"
+          class="button button--black section-order__button js-open-modal"
+          data-modal="room"
           type="button"
         >
           Забронювати номер
         </button>
         <button
-          class="button button--black section-order__button section-order__button--look"
+          class="button button--black section-order__button section-order__button--look js-open-modal"
+          data-modal="price"
           type="button"
         >
           Переглянути ціни
