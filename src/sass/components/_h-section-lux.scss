@@ -138,7 +138,7 @@
 }
 .swiper {
   width: 404px;
-  height: 194px;
+  height: 189px;
   box-shadow: $Box-shadow-small;
 
   @media screen and (min-width: $tablet) {
@@ -149,10 +149,6 @@
     width: 548px;
     height: 254px;
   }
-  // &-wrapper {
-  //   margin: 20px;
-  //   padding: 20px;
-  // }
 }
 .hotel-section__slider {
   &--container {
@@ -163,7 +159,5 @@
     @media screen and (min-width: $tablet) {
       margin: 0;
     }
-  }
-  &--img {
   }
 }
