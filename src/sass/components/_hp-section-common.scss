@@ -411,15 +411,15 @@
     .swiper{
 
       &-button-next, &-button-prev{
-        margin-top: 150px;
+        margin-top: 170px;
        }
      
        &-button-prev{
-         margin-left: calc(100% - 250px);
+         margin-left: calc(100% - 130px);
        }
      
        &-button-next{
-         margin-right: calc(100% - 280px);
+         margin-right: 0;
        }
      
        &-wrapper {
@@ -434,6 +434,7 @@
       overflow: hidden;
 
       &__slider-container{
+        min-height: 380px;
         margin-left: auto;
         min-height: 330px;
         margin-top: -60px;
