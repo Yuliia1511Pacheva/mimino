@@ -2,12 +2,17 @@
     background-color: #0E0C07;
 
     &__container {
-        min-width: 414px;
-        margin: 0 auto;
         display: flex;
-        justify-content: space-around;
+        flex-direction: column;
         align-items: center;
         
+        @media screen and (min-width: 414px) {
+            flex-direction: row;
+            min-width: 414px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+        }
         @media screen and (min-width: 1024px) {
             max-width: 1024px;
         }
@@ -26,7 +31,13 @@
     letter-spacing: 0.3em;
     text-transform: uppercase;
 
+    margin-top: 40px;
+
     color: #F3C653;
+
+    @media screen and (min-width: 414px) {
+        margin-top: 0;
+        }
 
     @media screen and (min-width: 1024px) {
         font-size: 64px;
