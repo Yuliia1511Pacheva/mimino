@@ -163,6 +163,7 @@
       width: 460px;
     }
   }
+
   &__wrapper {
     @media screen and (min-width: 1024px) {
       display: flex;
@@ -170,6 +171,7 @@
       justify-content: space-between;
     }
   }
+
   &__button {
     margin: 0 auto;
     display: block;
@@ -242,6 +244,7 @@
     fill: $TextColorBlack;
   }
 }
+
 .hotel-triple--flex {
   @media screen and (min-width: 1024px) {
     display: flex;
@@ -250,10 +253,12 @@
     flex-direction: row-reverse;
     gap: 42px;
   }
+
   @media screen and (min-width: 1280px) {
     gap: 155px;
   }
 }
+
 .hotel-triple__slider {
   overflow: hidden;
 
@@ -263,6 +268,7 @@
     flex-direction: column-reverse;
     margin: 0 auto;
   }
+
   @media screen and (min-width: $tablet) {
     width: auto;
     display: flex;
@@ -271,11 +277,13 @@
     justify-content: space-between;
   }
 }
+
 .hotel-triple--fix {
   @media screen and (min-width: 1024px) {
     margin-left: 266px;
     margin-bottom: 40px;
   }
+
   @media screen and (min-width: 1280px) {
     margin-left: 326px;
   }
