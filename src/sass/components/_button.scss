@@ -82,9 +82,9 @@
 }
 
 .button-modal {
-  min-width: 320px; //я змінив мінімальну ширину з 384 на 320
+  width: 100%; //я змінив мінімальну ширину з 384 на 320
   padding: 19px 43px;
-
+  margin-top: 40px;
   font-family: inherit;
   font-weight: 500;
   font-size: 20px;

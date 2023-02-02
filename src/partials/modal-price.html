@@ -3,21 +3,23 @@
     <svg class="modal__cross js-modal-close" width="24" height="24">
       <use href="./../src/images/sptite.svg#icon-x-black"></use>
     </svg>
-    <p class="modal__title modal__title--price">ЦІНИ НА НОМЕР</p>
+    <p class="modal__title modal__title--price">ЦIНИ НА НОМЕР</p>
     <p class="modal__under-title">Двомісний люкс</p>
     <p class="modal__above-input">Категорія номеру</p>
     <div class="modal-price__first">
       <div class="select-wrapper">
         <select
           name="modal-price__count-night"
-          class="modal-price__count-night modal__input js-select"
+          class="modal-price__count-night modal-select js-select"
           id="modal-price__count-night"
         >
           <option value="Сьогодні" selected>1</option>
           <option value="Завтра">2</option>
           <option value="Вчора">3</option>
         </select>
-        <label class="modal__lable" for="modal-price__count-night"
+        <label
+          class="modal__lable modal__lable--lastT"
+          for="modal-price__count-night"
           >Кількість ночей</label
         >
       </div>
@@ -25,14 +27,16 @@
       <div class="select-wrapper">
         <select
           name="modal-price__price"
-          class="modal-price__price modal__input js-select"
+          class="modal-price__price modal-select js-select"
           id="modal-price__price"
         >
           <option value="Сьогодні" selected>1000</option>
           <option value="Завтра">2000</option>
           <option value="Вчор">3000</option>
         </select>
-        <label class="modal__lable" for="modal-price__price">грн</label>
+        <label class="modal__lable modal__lable--last" for="modal-price__price"
+          >грн</label
+        >
       </div>
     </div>
 

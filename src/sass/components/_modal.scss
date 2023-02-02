@@ -1,7 +1,7 @@
 .modal {
   opacity: 0;
   visibility: hidden;
-  max-width: $mobile;
+  width: 100%;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -9,13 +9,19 @@
   z-index: 30;
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
   text-align: center;
-  padding: 40px 14px;
+  padding: 60px 14px;
   border-radius: 3px;
   transition: 0.3s all;
   background: #f0ecd6;
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
   @media screen and (min-width: $tablet) {
     min-width: 712px;
     padding: 60px;
+    .modal__lable--lastT {
+      margin-bottom: 0px;
+    }
   }
 
   &__lable {
@@ -47,15 +53,14 @@
     line-height: 28px;
     letter-spacing: 0.05em;
     color: $TextColorBlack;
-    margin-bottom: 48px;
+    margin-bottom: 40px;
   }
   &__input {
     width: 100%;
-    height: 64px;
     background: $BgColorSecondary;
     border: 1px solid $TextColorBrown;
     border-radius: 2px;
-    padding: 17px 12px;
+    padding: 16px 12px;
     font-family: 'Times New Roman';
     font-style: normal;
     font-weight: 700;
@@ -68,9 +73,32 @@
     align-items: center;
     @media screen and (min-width: $tablet) {
       width: 288px;
+      padding: 20px 12px;
     }
     &:focus {
       border-color: $TextColorBrown;
+    }
+  }
+  &-select {
+    width: 100%;
+    background: $BgColorSecondary;
+    border: 1px solid $TextColorBrown;
+    border-radius: 2px;
+    padding: 16px 12px;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.05em;
+    color: $TextColorGrey;
+    outline: none;
+    display: flex;
+    align-items: center;
+    height: 54px;
+    @media screen and (min-width: $tablet) {
+      width: 288px;
+      height: 64px;
     }
   }
 }
@@ -82,4 +110,7 @@
 .select-wrapper {
   display: flex;
   flex-direction: column;
+}
+.modal__lable--last {
+  margin-bottom: 0px;
 }
