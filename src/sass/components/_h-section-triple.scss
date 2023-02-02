@@ -10,11 +10,11 @@
     position: relative;
 
     padding-top: 32px;
-    padding-bottom: 32px;
+    // padding-bottom: 32px;
 
     @media screen and (min-width: 1024px) {
       padding-top: 66px;
-      padding-bottom: 40px;
+      // padding-bottom: 40px;
     }
 
     @media screen and (min-width: 1280px) {
@@ -240,5 +240,43 @@
     width: 32px;
     height: 32px;
     fill: $TextColorBlack;
+  }
+}
+.hotel-triple--flex {
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    gap: 42px;
+  }
+  @media screen and (min-width: 1280px) {
+    gap: 155px;
+  }
+}
+.hotel-triple__slider {
+  overflow: hidden;
+
+  @media screen and (min-width: 414px) {
+    width: 404px;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: $tablet) {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.hotel-triple--fix {
+  @media screen and (min-width: 1024px) {
+    margin-left: 266px;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: 326px;
   }
 }
