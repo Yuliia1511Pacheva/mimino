@@ -3,39 +3,42 @@
     transform: translateX(-50%);
     position: absolute;
     z-index: 1;
+    top: 16px;
+    width: 100%;
+    @media screen and (min-width: 1024px) {
+        top: 30px;
+        
+    }
 
     &__container {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 0 auto;
         
         @media screen and (min-width:414px) {
-        min-width: 414px;
-        margin: 0 auto;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding: 0 15px;
         flex-direction: row;
         justify-content: space-between;
-        align-items: flex-end;
-        }
 
-        @media screen and (min-width:768px) {
-            min-width: 768px;
-            padding-left: 15px;
-            padding-right: 15px;
-            align-items: center;
+            @media screen and (min-width: 500px) and (max-width: 1024px) {
+                max-width: 768px;
+                padding: 0 47px;
+            }
         }
         
+
         @media screen and (min-width: 1024px) {
-            min-width: 1024px;
-            padding-left: 47px;
-            padding-right: 47px;
+            padding: 0 47px;
             align-items: center;
+            margin: 0 auto;
+
         }
+
         @media screen and (min-width: 1280px) {
-            min-width: 1280px;
-            padding-left: 85px;
-            padding-right: 85px;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 85px;
             align-items: center;
         }
     }
@@ -50,14 +53,10 @@
 
     color: #FFFFFF;
 
-    margin-top: 16px;
 
     @media screen and (min-width: 1024px) {
         font-size: 40px;
         line-height: 1.07;
-
-        margin-top: 24px;
-        margin-bottom: 33px;
     }
 
     @media screen and (min-width: 1280px) {
@@ -106,8 +105,15 @@
         font-size: 16px;
         line-height: 20px;
         letter-spacing: 0.02em;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         
         color: #F3C653;
+        &:hover,
+        &:focus {
+            color: rgba(243, 198, 83, 0.7);
+        }
 
         @media screen and (min-width: 1024px) {
             font-size: 20px;
@@ -117,9 +123,12 @@
 
         &--tell {
             @media screen and (min-width: 1024px) {
-                border: 1px solid rgba(243, 198, 83, 0.7);
+                border: 1px solid #F3C653;
                 border-radius: 2px;
                 padding: 12px 8px;
+                transition-property: color;
+                transition-duration: 250ms;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             }
         }
     }
@@ -151,14 +160,14 @@
         margin-left: 140px;
 
         &__link {
-            fill: rgba(243, 198, 83, 0.7);
-                transition-property: fill;
-                transition-duration: 250ms;
-                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+            transition-property: fill;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            
+            fill: #F3C653;
             &:hover,
             &:focus {
-                fill: #F3C653;
+                fill: rgba(243, 198, 83, 0.7);
             }
             
         }
@@ -190,8 +199,7 @@
 
     @media screen and (min-width: 414px) {
         min-width: 210px;
-        top: 64px;
-        right: 15px;
+        top: 48px;
     }
    
     @media screen and (min-width: 1024px) {
