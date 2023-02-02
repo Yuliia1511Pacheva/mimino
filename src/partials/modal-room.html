@@ -33,7 +33,7 @@
       <div class="select-wrapper">
         <select
           name="modal-romms-numder"
-          class="modal-romms-numder modal__input js-select"
+          class="modal-romms-numder modal-select js-select"
           id="modal-romms-numder"
         >
           <option value="1">1</option>
@@ -51,14 +51,16 @@
       <div class="select-wrapper">
         <select
           name="modal-romms__arrival"
-          class="modal-romms__arrival modal__input js-select"
+          class="modal-romms__arrival modal-select js-select"
           id="modal-romms__arrival"
         >
           <option value="Сьогодні" selected>Сьогодні</option>
           <option value="Завтра">Завтра</option>
           <option value="Вчора">Вчора</option>
         </select>
-        <label class="modal__lable" for="modal-romms__arrival"
+        <label
+          class="modal__lable modal__lable--lastT"
+          for="modal-romms__arrival"
           >Дата заїзду</label
         >
       </div>
@@ -66,14 +68,18 @@
       <div class="select-wrapper">
         <select
           name="modal-romms__togo"
-          class="modal-romms__togo modal__input js-select"
+          class="modal-romms__togo modal-select js-select"
           id="modal-romms__togo"
         >
           <option value="Сьогодні" selected>Сьогодні</option>
           <option value="Завтра">Завтра</option>
           <option value="Вчор">Вчора</option>
         </select>
-        <label class="modal__lable" for="modal-romms__togo">Дата заїзду</label>
+        <label
+          class="modal__lable modal__lable modal__lable--last"
+          for="modal-romms__togo"
+          >Дата виїзду</label
+        >
       </div>
     </div>
 
