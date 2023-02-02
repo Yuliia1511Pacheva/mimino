@@ -112,7 +112,7 @@
     gap: 30;
     margin-left: 41px;
     max-height: 270px;
-    width: 886px;
+    max-width: 886px;
     overflow: hidden;
     position: relative;
 
@@ -125,16 +125,16 @@
 }
 
 .restaurant__proposal {
-    width: 270px;
+    max-width: 270px;
 }
 
 .proposal-second {
-    width: 162px;
+    max-width: 162px;
 }
 
-/*.proposal-third {
-   max-width: 162px;
-}*/
+// .proposal-third {
+//    max-width: 162px;
+// }
 
 .restaurant__svg {
     display: block;
@@ -170,8 +170,7 @@
     @media screen and (min-width:1024px) {
        align-items: flex-end;
        align-content: flex-end;
-        margin-left: 47px;
-
+       min-width: 236px;
     }
 
 }
