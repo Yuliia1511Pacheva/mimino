@@ -6,7 +6,95 @@
       Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
       Velit officia consequat duis enim velit mollit.
     </p>
+
     <div class="section-order__wrap">
+      <div class="section-order__picture">
+        <picture>
+          <source
+            srcset="
+              ./images/order-desk-3.jpg    1x,
+              ./images/order-desk-3@2x.jpg 2x
+            "
+            media="(max-width: 1023px)"
+            height="270"
+          />
+
+          <source
+            srcset="./images/order-tab-1.jpg 1x, ./images/order-tab-1@2x.jpg 2x"
+            media="(max-width: 1279px)"
+            height="270"
+          />
+
+          <source
+            srcset="
+              ./images/order-desk-1.jpg    1x,
+              ./images/order-desk-1@2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+            height="270"
+          />
+          <img src="./images/order-desk-1.jpg" alt="" height="270" />
+        </picture>
+        <picture>
+          <source
+            srcset="./images/order-tab-2.jpg 1x, ./images/order-tab-2@2x.jpg 2x"
+            media="(max-width: 1023px)"
+            width="270"
+            height="270"
+          />
+          <source
+            srcset="./images/order-tab-2.jpg 1x, ./images/order-tab-2@2x.jpg 2x"
+            media="(max-width: 1279px)"
+            width="270"
+            height="270"
+          />
+
+          <source
+            srcset="
+              ./images/order-desk-2.jpg    1x,
+              ./images/order-desk-2@2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+            width="270"
+            height="270"
+          />
+          <img src="./images/order-desk-2.jpg" alt="" height="270" />
+        </picture>
+        <picture>
+          <source
+            srcset="./images/order-tab-3.jpg 1x, ./images/order-tab-3@2x.jpg 2x"
+            media="(max-width: 1023px)"
+            height="270"
+          />
+          <source
+            srcset="./images/order-tab-3.jpg 1x, ./images/order-tab-3@2x.jpg 2x"
+            media="(min-width: 1024px) and (max-width: 1279px)"
+            width="270"
+            height="270"
+          />
+
+          <source
+            srcset="
+              ./images/order-desk-3.jpg    1x,
+              ./images/order-desk-3@2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+            width="270"
+            height="270"
+          />
+          <img src="./images/order-desk-3.jpg" alt="" height="270" " />
+        </picture>
+      </div>
+
+      <div class="section-order__svg">
+        <svg class="section-order__svg-first" width="30px" height="16px">
+          <use href="./images/sptite.svg#icon-white-left"></use>
+        </svg>
+        <svg width="30px" height="16px">
+          <use href="./images/sptite.svg#icon-white-right"></use>
+        </svg>
+      </div>
+
       <div>
         <button
           class="button button--black section-order__button js-open-modal"
