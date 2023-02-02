@@ -50,7 +50,7 @@
     line-height: calc(43/40);
     color: $TextColorWhite;
     margin-bottom: 12px;
-    letter-spacing: 0.3 em;
+    letter-spacing: 0.3em;
 
     @media screen and (min-width: 1024px) {
         font-size: 64px;
@@ -62,7 +62,7 @@
 }
 
 .restaurant__title {
-    
+
     font-style: 'Bold';
     font-size: 20px;
     line-height: calc(24/20);
@@ -79,7 +79,7 @@
 }
 
 .restaurant__text {
-   
+
     font-style: 'SemiBold';
     font-size: 12px;
     line-height: calc(15/12);
@@ -97,21 +97,97 @@
 
 }
 
-@media screen and (min-width: 1024px) {
+/*@media screen and (min-width: 1024px) {
     .restaurant__order {
         display: flex;
         flex-direction: row-reverse;
         align-items: flex-end;
 
     }
+}*/
 
+.restaurant__options {
+    display: flex;
+    gap: 30;
+    margin-left: 41px;
+    max-height: 270px;
+    width: 886px;
+    overflow: hidden;
+    position: relative;
 
+    @media screen and (min-width: 1024px) {
+        margin-left: 30px;
+        overflow: visible;
 
-
+    }
 
 }
 
-.swiper-block {
+.restaurant__proposal {
+    width: 270px;
+}
+
+.proposal-second {
+    width: 162px;
+}
+
+/*.proposal-third {
+   max-width: 162px;
+}*/
+
+.restaurant__svg {
+    display: block;
+    width: 98px;
+    height: 32px;
+    margin-top: 16px;
+    margin-left: 41px;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 1024px) {
+        /*margin: 0;
+        position: absolute;
+        left: 250px;*/
+        display: none;
+     
+
+
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .restaurant__tablet {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+}
+
+.restaurant-btn {
+    text-align: center;
+
+    @media screen and (min-width:1024px) {
+       align-items: flex-end;
+       align-content: flex-end;
+        margin-left: 47px;
+
+    }
+
+}
+
+
+
+
+
+
+
+.btn {
+    margin-bottom: 16px;
+}
+
+
+
+/*.swiper-block {
     max-width: 245px;
 
     @media screen and (min-width:1024px) {
@@ -124,21 +200,6 @@
 
     }
 }
-
-.restaurant-btn {
-    text-align: center;
-
-    @media screen and (min-width:1024px) {
-        align-content: flex-end;
-
-    }
-
-}
-
-.btn {
-    margin-bottom: 16px;
-}
-
 .swiper-picture {
     margin-bottom: 80px;
 
@@ -147,3 +208,8 @@
 
     }
 }
+
+*/
+
+
+
