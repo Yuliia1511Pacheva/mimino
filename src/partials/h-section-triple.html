@@ -2,7 +2,7 @@
   <div class="triple__gradients">
     <div class="container">
       <div class="triple__box">
-        <div class="triple__company">
+        <!-- <div class="triple__company">
           <p class="triple__text--up">Amet minim mollit non</p>
           <p class="triple__company-title">MIMIHO</p>
         </div>
@@ -46,85 +46,318 @@
               alt="Трьохмісний номер"
             />
           </picture>
+        </div> -->
+        <div class="hotel-triple--flex">
+          <div class="hotel-double__text">
+            <p class="hotel-double__text hotel-double__text--up">
+              Amet minim mollit non
+            </p>
+            <h2 class="hotel-double__title">MIMIHO</h2>
+            <p class="hotel-double__subtitle">
+              <span
+                class="hotel-double__subtitle hotel-double__subtitle--uppercase"
+                >ДВОМІСНИЙ НОМЕР</span
+              >
+            </p>
+            <p class="hotel-double__text hotel-double__text--down">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+          <picture class="hotel-double__images">
+            <source
+              srcset="
+                ./images/hotel_lux_mob.webp    1x,
+                ./images/hotel_lux_mob@2x.webp 2x
+              "
+              type="image/webp"
+              media="(max-width: 1023px)"
+            />
+            <source
+              srcset="
+                ./images/hotel_lux_mob.jpg    1x,
+                ./images/hotel_lux_mob@2x.jpg 2x
+              "
+              media="(max-width: 1023px)"
+            />
+            <source
+              srcset="
+                ./images/hotel_lux_desk.webp    1x,
+                ./images/hotel_lux_desk@2x.webp 2x
+              "
+              type="image/webp"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./images/hotel_lux_desk.jpg    1x,
+                ./images/hotel_lux_desk@2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./images/hotel_lux_tab.webp    1x,
+                ./images/hotel_lux_tab@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <img
+              class="hotel-double__img"
+              srcset="
+                ./images/hotel_lux_tab.jpg    1x,
+                ./images/hotel_lux_tab@2x.jpg 2x
+              "
+              alt="Hotel lux"
+            />
+          </picture>
         </div>
-        <div class="triple__button">
+      </div>
+      <div class="hotel-triple__slider">
+        <!-- button -->
+        <div class="hotel-lux__button">
           <button class="button button--black" type="button">
             <a href="./rooms.html">Детальніше</a>
           </button>
-          <button class="button button--black" type="button">
+          <button
+            class="button button--black js-open-modal"
+            data-modal="price"
+            type="button"
+          >
             Переглянути ціни
           </button>
         </div>
+        <!-- slider -->
+        <div class="hp-section-common__slider-container hotel-triple--fix">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/hotel_slider_desk_1.webp    1x,
+                      ./images/hotel_slider_desk_1@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1280px)"
+                    sizes="254px"
+                  />
+                  <source
+                    srcset="
+                      ./images/hotel_slider_desk_1.jpg    1x,
+                      ./images/hotel_slider_desk_1@2x.jpg 2x
+                    "
+                    media="(min-width: 1280px)"
+                    sizes="254px"
+                  />
+                  <source
+                    srcset="
+                      ./images/hotel_slider_tab_1.webp    1x,
+                      ./images/hotel_slider_tab_1@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1024px)"
+                    sizes="194px"
+                  />
+                  <source
+                    srcset="
+                      ./images/hotel_slider_tab_1.jpg    1x,
+                      ./images/hotel_slider_tab_1@2x.jpg 2x
+                    "
+                    media="(min-width: 1024px)"
+                    sizes="194px"
+                  />
+                  <source
+                    srcset="
+                      ./images/hotel_slider_tab_1.webp    1x,
+                      ./images/hotel_slider_tab_1@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(max-width: 1023px)"
+                    sizes="194px"
+                  />
+                  <img
+                    class="hotel-section__slider--img"
+                    srcset="
+                      ./images/hotel_slider_tab_1.jpg    1x,
+                      ./images/hotel_slider_tab_1@2x.jpg 2x
+                    "
+                    alt="Hotel lux"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/hotel_slider_desk_2.webp    1x,
+                      ./images/hotel_slider_desk_2@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1280px)"
+                    sizes="254px"
+                  />
+                  <source
+                    srcset="
+                      ./images/hotel_slider_desk_2.jpg    1x,
+                      ./images/hotel_slider_desk_2@2x.jpg 2x
+                    "
+                    media="(min-width: 1280px)"
+                    sizes="254px"
+                  />
+                  <source
+                    srcset="
+                      ./images/hotel_slider_tab_2.webp    1x,
+                      ./images/hotel_slider_tab_2@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1024px)"
+                    sizes="194px"
+                  />
+                  <source
+                    srcset="
+                      ./images/hotel_slider_tab_2.jpg    1x,
+                      ./images/hotel_slider_tab_2@2x.jpg 2x
+                    "
+                    media="(min-width: 1024px)"
+                    sizes="194px"
+                  />
+                  <source
+                    srcset="
+                      ./images/hotel_slider_tab_2.webp    1x,
+                      ./images/hotel_slider_tab_2@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(max-width: 1023px)"
+                    sizes="194px"
+                  />
+                  <img
+                    class="hotel-section__slider--img"
+                    srcset="
+                      ./images/hotel_slider_tab_2.jpg    1x,
+                      ./images/hotel_slider_tab_2@2x.jpg 2x
+                    "
+                    alt="Hotel lux"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/hotel_slider_desk_3.webp    1x,
+                      ./images/hotel_slider_desk_3@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1280px)"
+                    sizes="254px"
+                  />
+                  <source
+                    srcset="
+                      ./images/hotel_slider_desk_3.jpg    1x,
+                      ./images/hotel_slider_desk_3@2x.jpg 2x
+                    "
+                    media="(min-width: 1280px)"
+                    sizes="254px"
+                  />
+                  <source
+                    srcset="
+                      ./images/hotel_slider_tab_3.webp    1x,
+                      ./images/hotel_slider_tab_3@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1024px)"
+                    sizes="194px"
+                  />
+                  <source
+                    srcset="
+                      ./images/hotel_slider_tab_3.jpg    1x,
+                      ./images/hotel_slider_tab_3@2x.jpg 2x
+                    "
+                    media="(min-width: 1024px)"
+                    sizes="194px"
+                  />
+                  <source
+                    srcset="
+                      ./images/hotel_slider_tab_3.webp    1x,
+                      ./images/hotel_slider_tab_3@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(max-width: 1023px)"
+                    sizes="194px"
+                  />
+                  <img
+                    class="hotel-section__slider--img"
+                    srcset="
+                      ./images/hotel_slider_tab_3.jpg    1x,
+                      ./images/hotel_slider_tab_3@2x.jpg 2x
+                    "
+                    alt="Hotel lux"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/hotel_slider_desk_4.webp    1x,
+                      ./images/hotel_slider_desk_4@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1280px)"
+                    sizes="254px"
+                  />
+                  <source
+                    srcset="
+                      ./images/hotel_slider_desk_4.jpg    1x,
+                      ./images/hotel_slider_desk_4@2x.jpg 2x
+                    "
+                    media="(min-width: 1280px)"
+                    sizes="254px"
+                  />
+                  <source
+                    srcset="
+                      ./images/hotel_slider_tab_4.webp    1x,
+                      ./images/hotel_slider_tab_4@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1024px)"
+                    sizes="194px"
+                  />
+                  <source
+                    srcset="
+                      ./images/hotel_slider_tab_4.jpg    1x,
+                      ./images/hotel_slider_tab_4@2x.jpg 2x
+                    "
+                    media="(min-width: 1024px)"
+                    sizes="194px"
+                  />
+                  <source
+                    srcset="
+                      ./images/hotel_slider_tab_4.webp    1x,
+                      ./images/hotel_slider_tab_4@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(max-width: 1023px)"
+                    sizes="194px"
+                  />
+                  <img
+                    class="hotel-section__slider--img"
+                    srcset="
+                      ./images/hotel_slider_tab_4.jpg    1x,
+                      ./images/hotel_slider_tab_4@2x.jpg 2x
+                    "
+                    alt="Hotel lux"
+                  />
+                </picture>
+              </div>
+            </div>
 
-        <div class="triple__wrapper">
-          <div class="slider">
-            <div class="slider__box">
-              <picture>
-                <source
-                  srcset="
-                    ./images/hotel_slider_desk_2.webp    1x,
-                    ./images/hotel_slider_desk_2@2x.webp 2x
-                  "
-                  type="image/webp"
-                  media="(min-width: 1280px)"
-                  sizes="254px"
-                />
-                <source
-                  srcset="
-                    ./images/hotel_slider_desk_2.jpg    1x,
-                    ./images/hotel_slider_desk_2@2x.jpg 2x
-                  "
-                  media="(min-width: 1280px)"
-                  sizes="254px"
-                />
-                <source
-                  srcset="
-                    ./images/hotel_slider_tab_2.webp    1x,
-                    ./images/hotel_slider_tab_2@2x.webp 2x
-                  "
-                  type="image/webp"
-                  media="(min-width: 1024px)"
-                  sizes="194px"
-                />
-                <source
-                  srcset="
-                    ./images/hotel_slider_tab_2.jpg    1x,
-                    ./images/hotel_slider_tab_2@2x.jpg 2x
-                  "
-                  media="(min-width: 1024px)"
-                  sizes="194px"
-                />
-                <source
-                  srcset="
-                    ./images/hotel_slider_tab_2.webp    1x,
-                    ./images/hotel_slider_tab_2@2x.webp 2x
-                  "
-                  type="image/webp"
-                  media="(max-width: 1023px)"
-                  sizes="194px"
-                />
-                <img
-                  class="hotel-section__slider--img"
-                  srcset="
-                    ./images/hotel_slider_tab_2.jpg    1x,
-                    ./images/hotel_slider_tab_2@2x.jpg 2x
-                  "
-                  alt="Hotel triple"
-                />
-              </picture>
-            </div>
-            <div class="slider__button-box">
-              <button type="button" class="slider__button">
-                <svg class="slider__icon">
-                  <use href="./images/sptite.svg#icon-dash-left"></use>
-                </svg>
-              </button>
-              <button type="button" class="slider__button">
-                <svg class="slider__icon">
-                  <use href="./images/sptite.svg#icon-dash-right"></use>
-                </svg>
-              </button>
-            </div>
+            <!-- Swiper ends -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
