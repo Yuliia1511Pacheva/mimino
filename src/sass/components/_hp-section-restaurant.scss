@@ -171,31 +171,23 @@
 .restaurant-btn {
     text-align: center;
 
-    @media screen and (min-width:1024px) {
+   
        align-items: flex-end;
        align-content: flex-end;
        min-width: 236px;
        flex-direction: column;
-        display: flex;
-        align-self: flex-end;
+       display: flex;
+       align-self: flex-end;
 
-       @media screen and (min-width: $desktop) {
-            
-       }
-    }
+     
+   
 .restaurant-button {
+    display: block;
     padding-left: 22px;
     padding-right: 22px;
     min-width: 236px;
 }
 }
-
-
-
-
-
-
-
 
 .btn {
     margin-bottom: 16px;
