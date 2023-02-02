@@ -1,12 +1,155 @@
-<section class="rm-section-hero">
-  <div class="rm-section-hero__shadow"></div>
+<div class="rm-section-hero__shadow"></div>
+
+<section class="rm-section-hero slider-section" data-slider="room-hero-slider">
+  <!-- Swiper begins-->
+  <div class="rm-section-hero__slider-container">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide room-slide" width="1280" height="720">
+          <picture class="rm-section-hero__slider-picture">
+            <source
+              srcset="./images/room-dt1@1x.jpg 1x, ./images/room-dt1@2x.jpg 2x"
+              media="(min-width: 1280px)"
+              width="1280"
+              height="720"
+            />
+
+            <source
+              srcset="./images/room-t1@1x.jpg 1x, ./images/room-t1@2x.jpg 2x"
+              media="(min-width: 1024px)"
+              width="1024"
+              height="720"
+            />
+
+            <source
+              srcset="./images/room-m1@1x.jpg 1x, ./images/room-m1@2x.jpg 2x"
+              media="(min-width: 414px)"
+              min-width="414"
+              min-height="740"
+            />
+
+            <source
+              srcset="./images/room-m1@1x.jpg 1x, ./images/room-m1@2x.jpg 2x"
+              media="(max-width: 413px)"
+              max-width="413"
+              height="740"
+            />
+
+            <img
+              class="hp-section-common__image-1"
+              src="./images/room-dt1@1x.jpg"
+              alt="interior design"
+              loading="lazy"
+            />
+          </picture>
+
+          <!-- <img
+            src="./images/room-dt2@1x.jpg"
+            alt="interior design"
+            loading="lazy"
+            width="1280"
+            height="720"
+          /> -->
+        </div>
+        <!-- Slide 2 -->
+        <div class="swiper-slide room-slide" width="1280" height="720">
+          <picture class="rm-section-hero__slider-picture">
+            <source
+              srcset="./images/room-dt2@1x.jpg 1x, ./images/room-dt2@2x.jpg 2x"
+              media="(min-width: 1280px)"
+              width="1280"
+              height="720"
+            />
+
+            <source
+              srcset="./images/room-t2@1x.jpg 1x, ./images/room-t2@2x.jpg 2x"
+              media="(min-width: 1024px)"
+              width="1024"
+              height="720"
+            />
+
+            <source
+              srcset="./images/room-m2@1x.jpg 1x, ./images/room-m2@2x.jpg 2x"
+              media="(min-width: 414px)"
+              min-width="414"
+              min-height="740"
+            />
+
+            <source
+              srcset="./images/room-m2@1x.jpg 1x, ./images/room-m2@2x.jpg 2x"
+              media="(max-width: 413px)"
+              max-width="413"
+              height="740"
+            />
+
+            <img
+              src="./images/room-dt3@1x.jpg"
+              alt="interior design"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide room-slide" width="1280" height="720">
+          <picture class="rm-section-hero__slider-picture">
+            <source
+              srcset="./images/room-dt3@1x.jpg 1x, ./images/room-dt3@2x.jpg 2x"
+              media="(min-width: 1280px)"
+              width="1280"
+              height="720" />
+
+            <source
+              srcset="./images/room-t3@1x.jpg 1x, ./images/room-t3@2x.jpg 2x"
+              media="(min-width: 1024px)"
+              width="1024"
+              height="720" />
+
+            <source
+              srcset="./images/room-m3@1x.jpg 1x, ./images/room-m3@2x.jpg 2x"
+              media="(min-width: 414px)"
+              min-width="414"
+              min-height="740" />
+
+            <source
+              srcset="./images/room-m3@1x.jpg 1x, ./images/room-m3@2x.jpg 2x"
+              media="(max-width: 413px)"
+              max-width="413"
+              height="740" />
+            <img
+              src="./images/room-dt1@1x.jpg"
+              alt="interior design"
+              loading="lazy"
+          /></picture>
+        </div>
+      </div>
+      <!-- Swiper ends -->
+      <div>
+        <div class="room__swiper-button-next">
+          <svg class="room__arrow-icon" width="40" height="40">
+            <use href="./images/sptite.svg#icon-dash-right"></use>
+          </svg>
+        </div>
+
+        <div class="room__swiper-button-prev">
+          <svg class="room__arrow-icon" width="40" height="40">
+            <use href="./images/sptite.svg#icon-dash-left"></use>
+          </svg>
+        </div>
+      </div>
+      <!-- <div class="swiper-pagination"></div> -->
+    </div>
+  </div>
+
   <div class="container">
-    <h1 class="rm-section-hero__title">ДВОМIСНИЙ НОМЕР люкс</h1>
-    <p class="rm-section-hero__text">
-      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-      Velit officia consequat duis enim velit mollit. Exercitation veniam
-      consequat sunt nostrud amet.
-    </p>
+    <div class="rm-section-hero__content">
+      <h1 class="rm-section-hero__title">ДВОМIСНИЙ НОМЕР люкс</h1>
+      <p class="rm-section-hero__text">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+    </div>
     <button
       type="button"
       class="rm-section-hero__button button js-open-modal"

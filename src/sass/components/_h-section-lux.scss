@@ -136,20 +136,20 @@
     justify-content: space-between;
   }
 }
-.swiper {
-  width: 404px;
-  height: 189px;
-  // box-shadow: $Box-shadow-small;
+// .swiper {
+//   width: 404px;
+//   height: 189px;
+//   // box-shadow: $Box-shadow-small;
 
-  @media screen and (min-width: $tablet) {
-    width: 428px;
-    height: 194px;
-  }
-  @media screen and (min-width: $desktop) {
-    width: 548px;
-    height: 254px;
-  }
-}
+//   @media screen and (min-width: $tablet) {
+//     width: 428px;
+//     height: 194px;
+//   }
+//   @media screen and (min-width: $desktop) {
+//     width: 548px;
+//     height: 254px;
+//   }
+// }
 .hotel-section__slider {
   &--container {
     margin: 0 0 20px -210px;

@@ -17,9 +17,9 @@
   overflow: hidden;
 }
 
-.swiper{
-  overflow: visible;
-}
+// .swiper{
+//   overflow: visible;
+// }
 
 // .swiper-wrapper{
 //   overflow: hidden;
@@ -47,24 +47,24 @@
 
 @media screen and (max-width: 413px) {
 
-  .swiper{
+  // .swiper{
 
-    &-button-next, &-button-prev{
-      margin-top: 100px;
-     }
+  //   &-button-next, &-button-prev{
+  //     margin-top: 100px;
+  //    }
    
-     &-button-prev{
-       margin-left: calc(100% - 250px);
-     }
+  //    &-button-prev{
+  //      margin-left: calc(100% - 250px);
+  //    }
    
-     &-button-next{
-       margin-right: calc(100% - 280px);
-     }
+  //    &-button-next{
+  //      margin-right: calc(100% - 280px);
+  //    }
    
-     &-wrapper {
-       width: 515px;
-     }
-  }
+  //    &-wrapper {
+  //      width: 515px;
+  //    }
+  // }
 
   
     .hp-section-common {
@@ -165,24 +165,24 @@
   
   @media screen and (min-width: $mobile) {
 
-    .swiper{
+    // .swiper{
 
-      &-button-next, &-button-prev{
-        margin-top: 100px;
-       }
+    //   &-button-next, &-button-prev{
+    //     margin-top: 100px;
+    //    }
      
-       &-button-prev{
-         margin-left: calc(100% - 250px);
-       }
+    //    &-button-prev{
+    //      margin-left: calc(100% - 250px);
+    //    }
      
-       &-button-next{
-         margin-right: calc(100% - 280px);
-       }
+    //    &-button-next{
+    //      margin-right: calc(100% - 280px);
+    //    }
      
-       &-wrapper {
-         width: 515px;
-       }
-    }
+    //    &-wrapper {
+    //      width: 515px;
+    //    }
+    // }
 
     .hp-section-common {
       padding-top: 16px;
@@ -282,24 +282,24 @@
   /*Tablet  - from 1024px*/
   @media screen and (min-width: $tablet) {
 
-    .swiper{
+    // .swiper{
 
-      &-button-next, &-button-prev{
-        margin-top: 130px;
-       }
+    //   &-button-next, &-button-prev{
+    //     margin-top: 130px;
+    //    }
      
-       &-button-prev{
-         margin-left: calc(100% - 130px);
-       }
+    //    &-button-prev{
+    //      margin-left: calc(100% - 130px);
+    //    }
      
-       &-button-next{
-         margin-right: 0;
-       }
+    //    &-button-next{
+    //      margin-right: 0;
+    //    }
      
-       &-wrapper {
-         width: 515px;
-       }
-    }
+    //    &-wrapper {
+    //      width: 515px;
+    //    }
+    // }
   
     .hp-section-common {
       margin-top: -50px;
@@ -408,24 +408,24 @@
   /*Desktop  - from 1280px*/
   @media screen and (min-width: $desktop) {
 
-    .swiper{
+    // .swiper{
 
-      &-button-next, &-button-prev{
-        margin-top: 170px;
-       }
+    //   &-button-next, &-button-prev{
+    //     margin-top: 170px;
+    //    }
      
-       &-button-prev{
-         margin-left: calc(100% - 130px);
-       }
+    //    &-button-prev{
+    //      margin-left: calc(100% - 130px);
+    //    }
      
-       &-button-next{
-         margin-right: 0;
-       }
+    //    &-button-next{
+    //      margin-right: 0;
+    //    }
      
-       &-wrapper {
-         width: 515px;
-       }
-    }
+    //    &-wrapper {
+    //      width: 515px;
+    //    }
+    // }
   
     .hp-section-common {
       margin-top: -50px;

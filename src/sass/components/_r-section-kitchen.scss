@@ -1,11 +1,11 @@
 
 /*Mobile style - up to 414px*/
 
-@media screen and (max-width: 413px) {
-  .swiper {
-    width: 515px;
-    height: 245px;
-  }
+// @media screen and (max-width: 413px) {
+//   .swiper {
+//     width: 515px;
+//     height: 245px;
+//   }
 
   .hp-section-common {
     padding-top: 16px;
@@ -99,13 +99,13 @@
       }
     }
   }
-}
+
 
 @media screen and (min-width: $mobile) {
-  .swiper {
-    width: 515px;
-    height: 245px;
-  }
+  // .swiper {
+  //   width: 515px;
+  //   height: 245px;
+  // }
 
   .hp-section-common {
     padding-top: 16px;
@@ -203,10 +203,10 @@
 
 /*Tablet  - from 1024px*/
 @media screen and (min-width: $tablet) {
-  .swiper {
-    width: 428px;
-    height: 194px;
-  }
+  // .swiper {
+  //   width: 428px;
+  //   height: 194px;
+  // }
 
   .hp-section-common {
     margin-top: -50px;
@@ -311,10 +311,10 @@
 
 /*Desktop  - from 1280px*/
 @media screen and (min-width: $desktop) {
-  .swiper {
-    width: 548px;
-    height: 254px;
-  }
+  // .swiper {
+  //   width: 548px;
+  //   height: 254px;
+  // }
 
   .hp-section-common {
     margin-top: -50px;
