@@ -112,15 +112,21 @@
     gap: 30;
     margin-left: 41px;
     max-height: 270px;
-    max-width: 886px;
+    width: 886px;
     overflow: hidden;
     position: relative;
 
     @media screen and (min-width: 1024px) {
+
+        max-width: 886px;
         margin-left: 30px;
         overflow: visible;
-
     }
+
+          @media screen and (min-width: $desktop) {
+    
+             justify-content: space-between;
+          }
 
 }
 
@@ -149,9 +155,7 @@
         position: absolute;
         left: 250px;*/
         display: none;
-     
-
-
+    
     }
 }
 
@@ -171,9 +175,21 @@
        align-items: flex-end;
        align-content: flex-end;
        min-width: 236px;
-    }
+       flex-direction: column;
+        display: flex;
+        align-self: flex-end;
 
+       @media screen and (min-width: $desktop) {
+            
+       }
+    }
+.restaurant-button {
+    padding-left: 22px;
+    padding-right: 22px;
+    min-width: 236px;
 }
+}
+
 
 
 

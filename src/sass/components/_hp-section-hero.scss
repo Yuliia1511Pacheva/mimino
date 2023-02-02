@@ -66,8 +66,13 @@
     font-weight: 700;
     font-size: 96px;
     line-height: 1.08;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.2em;
     color: $TextColorWhite;
+
+    @media screen and (min-width: $mobile) {
+    
+      letter-spacing: 0.3em;
+      }
     
     @media screen and (min-width: $tablet) {
         
