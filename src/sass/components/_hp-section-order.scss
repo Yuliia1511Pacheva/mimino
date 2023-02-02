@@ -1,6 +1,9 @@
 .section-order {
+    position: relative;
+    max-width: 100%;
     padding-top: 24px;
     padding-bottom: 40px;
+    overflow: hidden;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -11,7 +14,7 @@
 
     @media screen and (min-width: 1024px) {
         padding-top: 48px;
-        padding-bottom: 48px;
+        padding-bottom: 96px;
     }
 
     @media screen and (min-width: 1024px) {
@@ -70,6 +73,51 @@
         margin-bottom: 0;
         margin-top: 0;
     }
+
+    &__picture {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        max-height: 270px;
+        width: 886px;
+        overflow: hidden;
+        
+        @media screen and (min-width: 1024px) {
+                gap: 30px;
+        }
+        
+        @media screen and (min-width: 1280px) {
+                gap: 40px;
+        }
+    }
+
+    &__svg {
+        display: block;
+        width: 100px;
+        height: 32px;
+        margin-top: 16px;
+        margin-left: 278px;
+        margin-bottom: 32px;
+
+        @media screen and (max-width: 413px) {
+            margin-left: 180px;
+        }
+
+        @media screen and (min-width: 1024px) {
+            position: absolute;
+            bottom: 47px;
+            right: 286px;
+            margin: 0;
+        }
+
+        @media screen and (min-width: 1280px) {
+        right: 380px;
+        }
+    }
+
+    &__svg-first {
+        margin-right: 34px;
+    }
 }
 
 .brand-title--revers {
@@ -88,3 +136,4 @@
         padding-left: 497px;
     }
 }
+
