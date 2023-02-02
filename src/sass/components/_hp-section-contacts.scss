@@ -10,10 +10,13 @@
 
     &__img {
         display: block;
-        width: 384px;
+        min-width: 384px;
+        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
 
         @media screen and (min-width: 1024px) {
             width: 535px;
+            // display: block;
         }
 
         @media screen and (min-width: 1280px) {
@@ -25,6 +28,7 @@
         @media screen and (min-width: 1024px) {
             display: flex;
             justify-content: space-between;
+            align-items: center;
         }
     }
 
@@ -36,6 +40,7 @@
         color: $TextColorBrown;
     }
 
+    //  позиціонування марджінами
     &__text-restaurant {
         margin-right: 22px;
     }
@@ -68,14 +73,14 @@
         display: flex;
         gap: 8px;
         align-items: center;
-        border: 0.5px solid $TextColorYellow;
+        outline: 0.5px solid $TextColorYellow;
         border-radius: 2px;
         background-color: $TextColorWhite;
 
         @media screen and (min-width: 1024px) {
-        margin-top: 8px;
-        margin-bottom: 35px;
-        max-width: 264px;
+            margin-top: 8px;
+            margin-bottom: 35px;
+            max-width: 264px;
         }
     }
 
@@ -83,20 +88,22 @@
         margin-left: 121px;
         margin-bottom: 32px;
         max-width: 260px;
-        padding-top: 8px;
-        padding-bottom: 8px;
-        padding-right: 33px;
-        padding-left: 10px;
+        // padding-top: 8px;
+        // padding-bottom: 8px;
+        // padding-right: 33px;
+        // padding-left: 10px;
+        fill: $TextColorBrown;
 
         @media screen and (min-width: 1024px) {
             margin-bottom: 51px;
             margin-left: 0;
             margin-top: 48px;
             max-width: 285px;
+            margin-bottom: 0;
         }
 
         @media screen and (min-width: 1280px) {
-            margin-bottom: 80px;
+            margin-bottom: 0;
         }
     }
 
@@ -107,11 +114,11 @@
     }
 
     &__list {
-       display: flex;
-       align-items: center;
+        display: flex;
+        align-items: center;
 
         @media screen and (min-width: 1024px) {
-        display: block;
+            display: block;
         }
     }
 }
@@ -137,7 +144,7 @@
     letter-spacing: 0.3em;
     color: $TextColorBrownLight;
     margin-bottom: 12px;
-    
+
     @media screen and (min-width: 1024px) {
         margin-bottom: 8px;
     }
@@ -159,3 +166,168 @@
         margin-bottom: 40px;
     }
 }
+
+
+
+
+// .section-contacts {
+//     padding-top: 36px;
+//     padding-bottom: 32px;
+//     overflow: hidden;
+
+//     @media screen and (min-width: 1024px) {
+//         padding-top: 56px;
+//         padding-bottom: 51px;
+//     }
+
+//     &__img {
+//         display: block;
+//         width: 384px;
+
+//         @media screen and (min-width: 1024px) {
+//             width: 535px;
+//         }
+
+//         @media screen and (min-width: 1280px) {
+//             width: 634px;
+//         }
+//     }
+
+//     &__wrap {
+//         @media screen and (min-width: 1024px) {
+//             display: flex;
+//             justify-content: space-between;
+//         }
+//     }
+
+//     &__text {
+//         font-family: Montserrat;
+//         font-weight: 500;
+//         font-size: 20px;
+//         line-height: 1.219;
+//         color: $TextColorBrown;
+//     }
+
+//     &__text-restaurant {
+//         margin-right: 22px;
+//     }
+
+//     &__text-hotel {
+//         margin-right: 54px;
+//     }
+
+//     &__tel {
+//         font-family: Montserrat;
+//         font-weight: 400;
+//         font-size: 14px;
+//         line-height: 1.219;
+//         letter-spacing: 0.02em;
+//         color: $TextColorBrownLight;
+//     }
+
+//     &__address {
+//         font-family: Montserrat;
+//         font-weight: 400;
+//         font-size: 16px;
+//         line-height: 1.218;
+//         letter-spacing: 0.01em;
+//         color: $TextColorBrownLight;
+//     }
+
+//     &__item {
+//         margin-top: 16px;
+//         padding: 0 8px;
+//         display: flex;
+//         gap: 8px;
+//         align-items: center;
+//         border: 0.5px solid $TextColorYellow;
+//         border-radius: 2px;
+//         background-color: $TextColorWhite;
+
+//         @media screen and (min-width: 1024px) {
+//         margin-top: 8px;
+//         margin-bottom: 35px;
+//         max-width: 264px;
+//         }
+//     }
+
+//     &__item-address {
+//         margin-left: 121px;
+//         margin-bottom: 32px;
+//         max-width: 260px;
+//         padding-top: 8px;
+//         padding-bottom: 8px;
+//         padding-right: 33px;
+//         padding-left: 10px;
+
+//         @media screen and (min-width: 1024px) {
+//             margin-bottom: 51px;
+//             margin-left: 0;
+//             margin-top: 48px;
+//             max-width: 285px;
+//         }
+
+//         @media screen and (min-width: 1280px) {
+//             margin-bottom: 80px;
+//         }
+//     }
+
+//     &__item-restaurant {
+//         @media screen and (min-width: 1024px) {
+//             max-width: 146px;
+//         }
+//     }
+
+//     &__list {
+//        display: flex;
+//        align-items: center;
+
+//         @media screen and (min-width: 1024px) {
+//         display: block;
+//         }
+//     }
+// }
+
+// .hidden-title {
+//     position: absolute;
+//     width: 1px;
+//     height: 1px;
+//     margin: -1px;
+//     border: 0;
+//     padding: 0;
+//     white-space: nowrap;
+//     clip-path: inset(100%);
+//     clip: rect(0 0 0 0);
+//     overflow: hidden;
+// }
+
+// .brand-title {
+//     font-family: "Film P3";
+//     font-weight: 700;
+//     font-size: 40px;
+//     line-height: 1.07;
+//     letter-spacing: 0.3em;
+//     color: $TextColorBrownLight;
+//     margin-bottom: 12px;
+    
+//     @media screen and (min-width: 1024px) {
+//         margin-bottom: 8px;
+//     }
+// }
+
+// .section-subtitle {
+//     font-family: Montserrat;
+//     font-weight: 600;
+//     font-size: 16px;
+//     line-height: 1.218;
+//     letter-spacing: 0.02em;
+//     color: $TextColorGrey;
+
+//     @media screen and (min-width: 1024px) {
+//         margin-bottom: 52px;
+//     }
+
+//     @media screen and (min-width: 1280px) {
+//         margin-bottom: 40px;
+//     }
+// }
