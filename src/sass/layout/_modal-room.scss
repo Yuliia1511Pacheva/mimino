@@ -1,7 +1,7 @@
 .modal-room {
   height: 100%;
-  max-height: 782px;
-  overflow-y: scroll;
+  max-height: 780px;
+  overflow-y: auto;
   @media screen and (min-width: $tablet) {
     overflow-y: hidden;
     height: auto;
