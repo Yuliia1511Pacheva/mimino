@@ -1,4 +1,6 @@
 .modal-table {
+  max-height: 100vh;
+  overflow: auto;
   @media screen and (min-width: $tablet) {
     padding: 60px;
     .modal__lable--date {
