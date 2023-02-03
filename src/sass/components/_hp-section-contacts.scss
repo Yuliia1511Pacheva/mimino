@@ -10,13 +10,13 @@
 
     &__img {
         display: block;
-        min-width: 384px;
+        width: 384px;
         box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
         border-radius: 2px;
 
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 1024px) {
             width: 535px;
-            margin: 0 auto;
+            // margin: 0 auto;
         }
 
         @media screen and (min-width: 1280px) {
@@ -25,10 +25,12 @@
     }
 
     &__wrap {
+        
         @media screen and (min-width: 1024px) {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            
         }
     }
 
