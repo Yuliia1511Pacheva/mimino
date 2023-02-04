@@ -1,0 +1,32 @@
+.button-scroll-up {
+        display: none;
+    
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+       
+        padding: 14px;
+    
+        font-family: inherit;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        color: $TextColorYellow;
+        background: $BgColorDark;
+        
+        border: 4px solid $TextColorYellow;
+        border-radius: 50%;
+        cursor: pointer;
+
+        transition-property: background, border-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+       &:hover,
+       &:focus {
+        background: #ffffff;
+        border-color: #f3c653;
+       } 
+}
